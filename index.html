@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caribbean Flavors | Authentic Caribbean Cuisine</title>
+    <meta name="description" content="Experience the vibrant tastes of the Caribbean at our restaurant. Authentic jerk chicken, curry goat, and more.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Caribbean Flavors</h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#chefs">Chefs</a></li>
+                    <li><a href="#catering">Catering</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Taste the Authentic</h2>
+            <h1>Caribbean Cuisine</h1>
+            <p>Experience the vibrant flavors and rich culinary traditions</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="#contact" class="btn btn-secondary">Reserve Table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <div class="divider">
+                    <span><i class="fas fa-pepper-hot"></i></span>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame"></div>
+                </div>
+                <div class="about-text">
+                    <h3>Bringing Caribbean Flavors to Your Table</h3>
+                    <p>Caribbean Flavors was born from a passion for the rich and diverse cuisine of the Caribbean islands. Our restaurant celebrates the blend of African, European, Indian, and indigenous influences that make Caribbean food so unique.</p>
+                    <p>Every dish we serve is prepared with authentic spices and traditional techniques, bringing the true taste of the islands to your plate. Our chefs, born and trained in the Caribbean, ensure that each meal captures the essence of island cuisine.</p>
+                    <p>Whether you're craving spicy jerk chicken, savory curry goat, or sweet tropical desserts, we invite you to experience the warmth and vibrancy of Caribbean hospitality at our restaurant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Features -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3>Authentic Recipes</h3>
+                <p>Traditional cooking methods and spices from the Caribbean islands</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Fresh Ingredients</h3>
+                <p>Locally sourced produce and imported Caribbean spices</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Catering Services</h3>
+                <p>Full-service catering for events of all sizes</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <div class="divider">
+                    <span><i class="fas fa-drumstick-bite"></i></span>
+                </div>
+                <p>Explore our selection of authentic Caribbean dishes</p>
+            </div>
+            
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="all">All</button>
+                <button class="menu-tab" data-category="mains">Main Dishes</button>
+                <button class="menu-tab" data-category="sides">Sides</button>
+                <button class="menu-tab" data-category="desserts">Desserts</button>
+                <button class="menu-tab" data-category="drinks">Drinks</button>
+            </div>
+            
+            <div class="menu-items">
+                <!-- Main Dishes -->
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-image">
+                        <div class="item-label">Popular</div>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Jerk Chicken</h3>
+                        <p>Spicy grilled chicken marinated in a blend of Jamaican spices, served with rice and peas</p>
+                        <span class="price">$16.99</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-image curry-goat"></div>
+                    <div class="menu-item-info">
+                        <h3>Curry Goat</h3>
+                        <p>Tender goat meat slow-cooked in a rich curry sauce with potatoes and Caribbean spices</p>
+                        <span class="price">$18.99</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-image"></div>
+                    <div class="menu-item-info">
+                        <h3>Oxtail Stew</h3>
+                        <p>Slow-braised oxtail with butter beans in a savory brown sauce, seasoned with island herbs</p>
+                        <span class="price">$19.99</span>
+                    </div>
+                </div>
+                
+                <!-- Sides -->
+                <div class="menu-item" data-category="sides">
+                    <div class="menu-item-image"></div>
+                    <div class="menu-item-info">
+                        <h3>Rice and Peas</h3>
+                        <p>Rice cooked with kidney beans, coconut milk, and island spices</p>
+                        <span class="price">$4.99</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="sides">
+                    <div class="menu-item-image"></div>
+                    <div class="menu-item-info">
+                        <h3>Fried Plantains</h3>
+                        <p>Sweet plantains fried until golden brown</p>
+                        <span class="price">$3.99</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="sides">
+                    <div class="menu-item-image"></div>
+                    <div class="menu-item-info">
+                        <h3>Festival</h3>
+                        <p>Sweet cornmeal dumplings, lightly fried</p>
+                        <span class="price">$3.99</span>
+                    </div>
+                </div>
+                
+                <!-- Desserts -->
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image"></div>
+                    <div class="menu-item-info">
+                        <h3>Rum Cake</h3>
+                        <p>Traditional Caribbean cake infused with aged rum and topped with shredded coconut</p>
+                        <span class="price">$6.99</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image"></div>
+                    <div class="menu-item-info">
+                        <h3>Sweet Potato Pudding</h3>
+                        <p>Creamy sweet potato pudding spiced with cinnamon, nutmeg, and vanilla</p>
+                        <span class="price">$5.99</span>
+                    </div>
+                </div>
+                
+                <!-- Drinks -->
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-item-image"></div>
+                    <div class="menu-item-info">
+                        <h3>Sorrel</h3>
+                        <p>Traditional Caribbean hibiscus drink spiced with ginger and cinnamon</p>
+                        <span class="price">$3.99</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-item-image"></div>
+                    <div class="menu-item-info">
+                        <h3>Pineapple Ginger Punch</h3>
+                        <p>Fresh pineapple juice blended with ginger and island spices</p>
+                        <span class="price">$4.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chefs Section -->
+    <section id="chefs" class="chefs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet Our Chefs</h2>
+                <div class="divider">
+                    <span><i class="fas fa-hat-chef"></i></span>
+                </div>
+                <p>The talented team behind our authentic Caribbean flavors</p>
+            </div>
+            
+            <div class="chef-profiles">
+                <div class="chef">
+                    <div class="chef-image chef-1"></div>
+                    <div class="chef-info">
+                        <h3>Chef Maya Johnson</h3>
+                        <p class="chef-title">Executive Chef</p>
+                        <p>Born in Jamaica, Chef Maya brings over 20 years of culinary expertise specializing in authentic Caribbean cuisine.</p>
+                    </div>
+                </div>
+                
+                <div class="chef">
+                    <div class="chef-image chef-2"></div>
+                    <div class="chef-info">
+                        <h3>Chef Anthony Richards</h3>
+                        <p class="chef-title">Head Chef</p>
+                        <p>With roots in Trinidad & Tobago, Chef Anthony is known for his innovative approach to traditional Caribbean recipes.</p>
+                    </div>
+                </div>
+                
+                <div class="chef">
+                    <div class="chef-image chef-3"></div>
+                    <div class="chef-info">
+                        <h3>Chef Daniel Williams</h3>
+                        <p class="chef-title">Pastry Chef</p>
+                        <p>A master of Caribbean desserts, Chef Daniel creates sweet treats that perfectly complement our savory dishes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catering Section -->
+    <section id="catering" class="catering">
+        <div class="container">
+            <div class="section-header">
+                <h2>Catering Services</h2>
+                <div class="divider">
+                    <span><i class="fas fa-concierge-bell"></i></span>
+                </div>
+                <p>Bring the flavors of the Caribbean to your next event</p>
+            </div>
+            
+            <div class="catering-content">
+                <div class="catering-image"></div>
+                <div class="catering-info">
+                    <h3>Customized Caribbean Cuisine for Every Occasion</h3>
+                    <p>Whether you're planning a corporate event, wedding, family reunion, or birthday celebration, our catering services bring the vibrant tastes of the Caribbean directly to you.</p>
+                    <p>Our experienced team works with you to create a customized menu that suits your event's needs and your guests' preferences. From buffet-style service to plated dinners, we ensure an unforgettable culinary experience.</p>
+                    
+                    <div class="catering-options">
+                        <div class="option">
+                            <i class="fas fa-user-friends"></i>
+                            <h4>Small Gatherings</h4>
+                            <p>10-30 guests</p>
+                        </div>
+                        <div class="option">
+                            <i class="fas fa-users"></i>
+                            <h4>Medium Events</h4>
+                            <p>30-100 guests</p>
+                        </div>
+                        <div class="option">
+                            <i class="fas fa-city"></i>
+                            <h4>Large Functions</h4>
+                            <p>100+ guests</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary">Request Catering Information</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Food Gallery</h2>
+                <div class="divider">
+                    <span><i class="fas fa-camera"></i></span>
+                </div>
+                <p>A visual feast of our Caribbean dishes</p>
+            </div>
+            
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div class="gallery-image gallery-1"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image gallery-2"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image gallery-3"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image gallery-4"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image gallery-5"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image gallery-6"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <div class="divider">
+                    <span><i class="fas fa-quote-right"></i></span>
+                </div>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>The jerk chicken here is the most authentic I've had outside of Jamaica. The flavors transported me right back to the islands!</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="client">
+                        <h4>Michael T.</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Their catering service was exceptional for our corporate event. The food was delicious, and the presentation was beautiful. Highly recommend!</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="client">
+                        <h4>Sarah L.</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>The curry goat is to die for! Rich, flavorful, and perfectly spiced. This place brings true Caribbean flavor to the city.</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="client">
+                        <h4>David R.</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <div class="divider">
+                    <span><i class="fas fa-envelope"></i></span>
+                </div>
+                <p>We'd love to hear from you</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>123 Island Avenue<br>Miami, FL 33139</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Monday - Thursday: 11am - 10pm<br>
+                               Friday - Saturday: 11am - 11pm<br>
+                               Sunday: 12pm - 9pm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>(305) 555-1234</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@caribbeanflavors.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Caribbean Flavors</h2>
+                    <p>Authentic Caribbean cuisine in every bite</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for special offers and updates</p>
+                    <form>
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn btn-small">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Caribbean Flavors. All Rights Reserved.</p>
+                <p>Design by <a href="#">Island Web Designs</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll To Top Button -->
+    <a href="#home" class="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+</body>
+</html>

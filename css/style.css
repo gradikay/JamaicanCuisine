@@ -1,0 +1,1068 @@
+/*---------------------------------
+  Base Styles
+---------------------------------*/
+:root {
+    /* Primary Colors */
+    --primary-color: #e67e22;
+    --primary-dark: #d35400;
+    --primary-light: #f39c12;
+    
+    /* Secondary Colors */
+    --secondary-color: #2ecc71;
+    --secondary-dark: #27ae60;
+    --secondary-light: #4cd137;
+    
+    /* Accent Colors */
+    --accent-color: #9b59b6;
+    --accent-dark: #8e44ad;
+    
+    /* Background Colors */
+    --bg-light: #ffffff;
+    --bg-off-white: #f9f9f9;
+    --bg-dark: #222222;
+    --bg-medium: #333333;
+    
+    /* Text Colors */
+    --text-dark: #333333;
+    --text-medium: #666666;
+    --text-light: #999999;
+    --text-white: #ffffff;
+    
+    /* Border Colors */
+    --border-color: #e0e0e0;
+    --border-dark: #d0d0d0;
+    
+    /* Caribbean Theme Colors */
+    --caribbean-blue: #1abc9c;
+    --caribbean-green: #16a085;
+    --caribbean-yellow: #f1c40f;
+    --caribbean-orange: #f39c12;
+    --caribbean-red: #e74c3c;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+    
+    /* Border Radius */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 16px;
+    --border-radius-full: 50%;
+    
+    /* Transitions */
+    --transition-fast: 0.3s ease;
+    --transition-medium: 0.5s ease;
+    --transition-slow: 0.8s ease;
+    
+    /* Font Family */
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Playfair Display', serif;
+    
+    /* Container Width */
+    --container-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/*---------------------------------
+  Typography
+---------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-dark);
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: var(--spacing-sm);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.section-header h2 {
+    color: var(--primary-dark);
+    margin-bottom: var(--spacing-xs);
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: var(--text-medium);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.divider {
+    position: relative;
+    height: 2px;
+    width: 80px;
+    background-color: var(--primary-color);
+    margin: var(--spacing-sm) auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider span {
+    position: absolute;
+    background-color: var(--bg-light);
+    padding: 0 10px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+/*---------------------------------
+  Buttons
+---------------------------------*/
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    border-radius: var(--border-radius-md);
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    color: var(--text-white);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text-white);
+    border: 2px solid var(--text-white);
+}
+
+.btn-secondary:hover {
+    background-color: var(--text-white);
+    color: var(--primary-color);
+}
+
+.btn-small {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+/*---------------------------------
+  Header & Navigation
+---------------------------------*/
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(34, 34, 34, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    transition: all var(--transition-fast);
+    padding: 1rem 0;
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: var(--text-white);
+    font-weight: 600;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: var(--spacing-md);
+}
+
+.nav-menu a {
+    color: var(--text-white);
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width var(--transition-fast);
+}
+
+.nav-menu a:hover {
+    color: var(--primary-color);
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+}
+
+/*---------------------------------
+  Hero Section
+---------------------------------*/
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://source.unsplash.com/random/1600x900/?caribbean,restaurant') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-white);
+    padding: 0 var(--spacing-md);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    color: var(--caribbean-yellow);
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    margin: var(--spacing-xs) 0 var(--spacing-md);
+    color: var(--text-white);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+}
+
+/*---------------------------------
+  About Section
+---------------------------------*/
+.about {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--bg-off-white);
+}
+
+.about-content {
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    position: relative;
+    height: 450px;
+}
+
+.about-image::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    border: 4px solid var(--primary-color);
+    z-index: 1;
+}
+
+.image-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://source.unsplash.com/random/600x800/?caribbean,chef') no-repeat center/cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h3 {
+    color: var(--primary-dark);
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.about-text p {
+    margin-bottom: var(--spacing-md);
+    font-size: 1.05rem;
+    color: var(--text-medium);
+}
+
+/*---------------------------------
+  Features Section
+---------------------------------*/
+.features {
+    padding: var(--spacing-lg) 0;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+}
+
+.features .container {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+}
+
+.feature-box {
+    flex: 1;
+    text-align: center;
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    transition: transform var(--transition-fast);
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-white);
+}
+
+.feature-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-white);
+}
+
+.feature-box p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/*---------------------------------
+  Menu Section
+---------------------------------*/
+.menu {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--bg-light);
+}
+
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.menu-tab {
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius-md);
+    color: var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.menu-tab.active, .menu-tab:hover {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.menu-item {
+    background-color: var(--bg-off-white);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-fast);
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+}
+
+.menu-item-image {
+    height: 200px;
+    background: url('https://source.unsplash.com/random/400x300/?caribbean,food') no-repeat center/cover;
+    position: relative;
+}
+
+.menu-item-image.curry-goat {
+    background: url('https://source.unsplash.com/random/400x300/?curry,meat') no-repeat center/cover;
+}
+
+.item-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    padding: 0.2rem 0.8rem;
+    border-radius: var(--border-radius-sm);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.menu-item-info {
+    padding: var(--spacing-md);
+}
+
+.menu-item-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: var(--spacing-xs);
+    color: var(--primary-dark);
+}
+
+.menu-item-info p {
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-medium);
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/*---------------------------------
+  Chefs Section
+---------------------------------*/
+.chefs {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--bg-off-white);
+}
+
+.chef-profiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.chef {
+    background-color: var(--bg-light);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-fast);
+}
+
+.chef:hover {
+    transform: translateY(-10px);
+}
+
+.chef-image {
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+}
+
+.chef-1 {
+    background-image: url('https://source.unsplash.com/random/400x500/?chef,woman');
+}
+
+.chef-2 {
+    background-image: url('https://source.unsplash.com/random/400x500/?chef,man');
+}
+
+.chef-3 {
+    background-image: url('https://source.unsplash.com/random/400x500/?chef');
+}
+
+.chef-info {
+    padding: var(--spacing-md);
+    text-align: center;
+}
+
+.chef-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+    color: var(--primary-dark);
+}
+
+.chef-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.chef-info p {
+    font-size: 0.95rem;
+    color: var(--text-medium);
+}
+
+/*---------------------------------
+  Catering Section
+---------------------------------*/
+.catering {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--bg-light);
+}
+
+.catering-content {
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+.catering-image {
+    flex: 1;
+    height: 400px;
+    background: url('https://source.unsplash.com/random/600x800/?catering,caribbean') no-repeat center/cover;
+    border-radius: var(--border-radius-md);
+}
+
+.catering-info {
+    flex: 1;
+}
+
+.catering-info h3 {
+    color: var(--primary-dark);
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.catering-info p {
+    margin-bottom: var(--spacing-md);
+    font-size: 1.05rem;
+    color: var(--text-medium);
+}
+
+.catering-options {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+}
+
+.option {
+    flex: 1;
+    text-align: center;
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-md);
+    border: 1px solid var(--border-color);
+    transition: all var(--transition-fast);
+}
+
+.option:hover {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    border-color: var(--primary-color);
+}
+
+.option:hover h4 {
+    color: var(--text-white);
+}
+
+.option i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xs);
+    transition: color var(--transition-fast);
+}
+
+.option:hover i {
+    color: var(--text-white);
+}
+
+.option h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+    transition: color var(--transition-fast);
+}
+
+.option p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/*---------------------------------
+  Gallery Section
+---------------------------------*/
+.gallery {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--bg-off-white);
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-sm);
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius-md);
+}
+
+.gallery-image {
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    transition: transform var(--transition-medium);
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.1);
+}
+
+.gallery-1 {
+    background-image: url('https://source.unsplash.com/random/400x400/?jerk,chicken');
+}
+
+.gallery-2 {
+    background-image: url('https://source.unsplash.com/random/400x400/?curry,goat');
+}
+
+.gallery-3 {
+    background-image: url('https://source.unsplash.com/random/400x400/?caribbean,dessert');
+}
+
+.gallery-4 {
+    background-image: url('https://source.unsplash.com/random/400x400/?tropical,fruit');
+}
+
+.gallery-5 {
+    background-image: url('https://source.unsplash.com/random/400x400/?rum,cake');
+}
+
+.gallery-6 {
+    background-image: url('https://source.unsplash.com/random/400x400/?caribbean,patty');
+}
+
+/*---------------------------------
+  Testimonials Section
+---------------------------------*/
+.testimonials {
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                url('https://source.unsplash.com/random/1600x900/?caribbean,beach') no-repeat center/cover;
+    color: var(--text-white);
+}
+
+.testimonials .section-header h2 {
+    color: var(--text-white);
+}
+
+.testimonials .divider {
+    background-color: var(--text-white);
+}
+
+.testimonials .divider span {
+    background-color: transparent;
+    color: var(--text-white);
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+}
+
+.testimonial {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    text-align: center;
+    transition: transform var(--transition-fast);
+}
+
+.testimonial:hover {
+    transform: translateY(-10px);
+}
+
+.quote {
+    margin-bottom: var(--spacing-sm);
+    position: relative;
+}
+
+.quote i.fa-quote-left {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    color: var(--primary-light);
+    font-size: 1.5rem;
+    opacity: 0.5;
+}
+
+.quote i.fa-quote-right {
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    color: var(--primary-light);
+    font-size: 1.5rem;
+    opacity: 0.5;
+}
+
+.quote p {
+    margin: 0;
+    padding: 0 var(--spacing-sm);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.client h4 {
+    color: var(--text-white);
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.stars {
+    color: var(--caribbean-yellow);
+    font-size: 0.9rem;
+}
+
+/*---------------------------------
+  Contact Section
+---------------------------------*/
+.contact {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--bg-light);
+}
+
+.contact-content {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-md);
+}
+
+.info-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-right: var(--spacing-sm);
+    margin-top: 0.2rem;
+}
+
+.info-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    color: var(--primary-dark);
+}
+
+.info-item p {
+    font-size: 1rem;
+    color: var(--text-medium);
+    margin-bottom: 0;
+}
+
+.contact-form {
+    flex: 1;
+    background-color: var(--bg-off-white);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+}
+
+.contact-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-dark);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-sm);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    transition: border-color var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/*---------------------------------
+  Footer
+---------------------------------*/
+.footer {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    padding-top: var(--spacing-lg);
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo {
+    flex: 1 1 300px;
+}
+
+.footer-logo h2 {
+    color: var(--text-white);
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.8rem;
+}
+
+.footer-logo p {
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+.footer-links {
+    flex: 1 1 200px;
+}
+
+.footer-links h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-links ul li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer-links ul li a {
+    color: var(--text-light);
+    transition: color var(--transition-fast);
+}
+
+.footer-links ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-social {
+    flex: 1 1 200px;
+}
+
+.footer-social h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.social-icons {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-full);
+    color: var(--text-white);
+    transition: all var(--transition-fast);
+}
+
+.social-icons a:hover {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    transform: translateY(-5px);
+}
+
+.footer-newsletter {
+    flex: 1 1 300px;
+}
+
+.footer-newsletter h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-newsletter p {
+    color: var(--text-light);
+    font-size: 1rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-newsletter form {
+    display: flex;
+    gap: var(--spacing-xs);
+}
+
+.footer-newsletter input {
+    flex: 1;
+    padding: 0.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: var(--border-radius-sm);
+    color: var(--text-white);
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+}
+
+.footer-newsletter input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.footer-bottom {
+    padding: var(--spacing-md) 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.footer-bottom a {
+    color: var(--primary-color);
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/*---------------------------------
+  Scroll to Top Button
+---------------------------------*/
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    border-radius: var(--border-radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    z-index: 99;
+    transition: all var(--transition-fast);
+    opacity: 0.8;
+    visibility: visible;
+}
+
+.scroll-top:hover {
+    background-color: var(--primary-dark);
+    opacity: 1;
+}
