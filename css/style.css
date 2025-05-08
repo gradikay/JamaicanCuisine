@@ -363,8 +363,19 @@ nav ul li a:hover::after {
     overflow: hidden;
 }
 
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23FED100' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M0 20L20 0v5L0 25v-5zM0 30L20 10v5L0 35v-5zM20 30L0 50v-5l20-20v5zM40 10L20 30v-5l20-20v5z'/%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+}
+
 .reggae-top-border {
-    height: 10px;
+    height: 15px;
     background: repeating-linear-gradient(
         to right,
         #009B3A 0px,
@@ -378,6 +389,8 @@ nav ul li a:hover::after {
     top: 0;
     left: 0;
     width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 5;
 }
 
 .contact .section-title {
@@ -411,17 +424,38 @@ nav ul li a:hover::after {
 .contact-card {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    padding: 20px;
+    padding: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.4s ease;
     overflow: hidden;
     border-left: 3px solid #FED100;
+    z-index: 1;
+}
+
+.contact-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 30px 30px;
+    border-color: transparent transparent #009B3A transparent;
+    opacity: 0.7;
+    transition: all 0.4s ease;
 }
 
 .contact-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px) translateX(2px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    border-left-color: #009B3A;
+}
+
+.contact-card:hover::after {
+    border-width: 0 0 50px 50px;
+    border-color: transparent transparent #FED100 transparent;
 }
 
 .contact-card::before {
@@ -434,6 +468,15 @@ nav ul li a:hover::after {
     background-color: #B20000;
     transform: rotate(45deg);
     opacity: 0.7;
+    z-index: -1;
+    transition: all 0.4s ease;
+}
+
+.contact-card:hover::before {
+    width: 50px;
+    height: 50px;
+    background-color: #B20000;
+    opacity: 0.8;
 }
 
 .contact-card-header {
@@ -500,11 +543,13 @@ nav ul li a:hover::after {
     flex: 1;
     min-width: 350px;
     background-color: rgba(0, 155, 58, 0.1);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
     position: relative;
     border: 1px solid rgba(254, 209, 0, 0.3);
+    overflow: hidden;
+    z-index: 1;
 }
 
 .contact-form-container::before {
@@ -514,8 +559,48 @@ nav ul li a:hover::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, rgba(0, 155, 58, 0.15), rgba(254, 209, 0, 0.15), rgba(178, 0, 0, 0.15));
-    border-radius: 10px;
+    background: linear-gradient(45deg, 
+        rgba(0, 155, 58, 0.15), 
+        rgba(254, 209, 0, 0.15), 
+        rgba(178, 0, 0, 0.15));
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.contact-form-container::after {
+    content: '♪';
+    position: absolute;
+    right: -10px;
+    top: 30px;
+    font-size: 80px;
+    opacity: 0.07;
+    color: #FED100;
+    transform: rotate(15deg);
+    z-index: -1;
+}
+
+/* Music decoration elements */
+.contact-form-container .music-note-1 {
+    content: '♫';
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    font-size: 60px;
+    opacity: 0.07;
+    color: #009B3A;
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+
+.contact-form-container .music-note-2 {
+    content: '♬';
+    position: absolute;
+    right: 30px;
+    bottom: 70px;
+    font-size: 40px;
+    opacity: 0.07;
+    color: #B20000;
+    transform: rotate(25deg);
     z-index: -1;
 }
 
@@ -578,37 +663,80 @@ nav ul li a:hover::after {
 
 .form-group input, .form-group textarea {
     width: 100%;
-    padding: 12px 15px;
+    padding: 14px 18px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
     font-size: 1rem;
     transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    font-style: italic;
 }
 
 .form-group textarea {
     height: 150px;
     resize: none;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 155, 58, 0.05),
+        rgba(254, 209, 0, 0.03),
+        rgba(178, 0, 0, 0.05)
+    );
 }
 
 .form-group input:focus, .form-group textarea:focus {
     outline: none;
     border-color: #FED100;
     background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 0 2px rgba(254, 209, 0, 0.2);
+    box-shadow: 0 0 15px rgba(254, 209, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.form-group input:focus::placeholder, .form-group textarea:focus::placeholder {
+    opacity: 0.5;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+}
+
+/* Add a gradient border effect when fields are focused */
+.form-group {
+    position: relative;
+}
+
+.form-group::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #009B3A, #FED100, #B20000);
+    transform: translateX(-50%);
+    transition: width 0.4s ease;
+    z-index: 0;
+}
+
+.form-group:focus-within::after {
+    width: 100%;
 }
 
 .reggae-btn {
-    background: linear-gradient(45deg, #009B3A, #FED100);
+    background: linear-gradient(45deg, #009B3A, #FED100, #B20000);
+    background-size: 200% 200%;
     color: #000;
-    padding: 12px 25px;
+    padding: 14px 28px;
     border-radius: 50px;
     font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 12px;
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
@@ -616,6 +744,13 @@ nav ul li a:hover::after {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    animation: gradientFlow 8s ease infinite;
+}
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .reggae-btn::before {
@@ -625,35 +760,55 @@ nav ul li a:hover::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #FED100, #009B3A);
+    background: linear-gradient(45deg, #FED100, #B20000, #009B3A);
+    background-size: 200% 200%;
     transition: opacity 0.5s ease;
     opacity: 0;
     z-index: -1;
 }
 
+.reggae-btn::after {
+    content: '♫';
+    position: absolute;
+    bottom: -7px;
+    right: 5px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+
 .reggae-btn:hover::before {
     opacity: 1;
+    animation: gradientFlow 4s ease infinite;
 }
 
 .reggae-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    letter-spacing: 0.5px;
+}
+
+.reggae-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .reggae-btn .btn-text {
     position: relative;
     z-index: 2;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .reggae-btn i {
-    font-size: 1rem;
+    font-size: 1.1rem;
     position: relative;
     z-index: 2;
-    transition: transform 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .reggae-btn:hover i {
-    transform: translate(5px, -5px);
+    transform: translate(5px, -5px) rotate(15deg);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .reggae-bottom-decoration {
