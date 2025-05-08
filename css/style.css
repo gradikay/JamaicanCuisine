@@ -296,7 +296,7 @@ p {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('../attached_assets/hero.png') no-repeat center center/cover;
+                url('https://source.unsplash.com/random/1600x900/?caribbean,restaurant') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -370,7 +370,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../attached_assets/restaurant.png') no-repeat center/cover;
+    background: url('https://source.unsplash.com/random/600x800/?caribbean,chef') no-repeat center/cover;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -486,36 +486,12 @@ p {
 
 .menu-item-image {
     height: 200px;
-    background: url('../attached_assets/jerk-chicken.png') no-repeat center/cover;
+    background: url('https://source.unsplash.com/random/400x300/?caribbean,food') no-repeat center/cover;
     position: relative;
 }
 
 .menu-item-image.curry-goat {
-    background: url('../attached_assets/curry-goat.png') no-repeat center/cover;
-}
-
-.menu-item-image.oxtail {
-    background: url('../attached_assets/Oxtail_Stew.png') no-repeat center/cover;
-}
-
-.menu-item-image.rice-peas {
-    background: url('../attached_assets/Rice_and_Peas.png') no-repeat center/cover;
-}
-
-.menu-item-image.plantains {
-    background: url('../attached_assets/Fried_Plantains.png') no-repeat center/cover;
-}
-
-.menu-item-image.callaloo {
-    background: url('../attached_assets/Callaloo_on_a_plate.png') no-repeat center/cover;
-}
-
-.menu-item-image.rum-cake {
-    background: url('../attached_assets/bread.png') no-repeat center/cover;
-}
-
-.menu-item-image.ackee {
-    background: url('../attached_assets/ackee-saltfish.png') no-repeat center/cover;
+    background: url('https://source.unsplash.com/random/400x300/?curry,meat') no-repeat center/cover;
 }
 
 .item-label {
@@ -585,15 +561,15 @@ p {
 }
 
 .chef-1 {
-    background-image: url('../attached_assets/female-chef-2.png');
+    background-image: url('https://source.unsplash.com/random/400x500/?chef,woman');
 }
 
 .chef-2 {
-    background-image: url('../attached_assets/male-chef-4.png');
+    background-image: url('https://source.unsplash.com/random/400x500/?chef,man');
 }
 
 .chef-3 {
-    background-image: url('../attached_assets/duplin.png');
+    background-image: url('https://source.unsplash.com/random/400x500/?chef');
 }
 
 .chef-info {
@@ -636,7 +612,7 @@ p {
 .catering-image {
     flex: 1;
     height: 400px;
-    background: url('../attached_assets/catering.png') no-repeat center/cover;
+    background: url('https://source.unsplash.com/random/600x800/?catering,caribbean') no-repeat center/cover;
     border-radius: var(--border-radius-md);
 }
 
@@ -736,27 +712,27 @@ p {
 }
 
 .gallery-1 {
-    background-image: url('../attached_assets/jerk-chicken.png');
+    background-image: url('https://source.unsplash.com/random/400x400/?jerk,chicken');
 }
 
 .gallery-2 {
-    background-image: url('../attached_assets/curry-goat.png');
+    background-image: url('https://source.unsplash.com/random/400x400/?curry,goat');
 }
 
 .gallery-3 {
-    background-image: url('../attached_assets/bread.png');
+    background-image: url('https://source.unsplash.com/random/400x400/?caribbean,dessert');
 }
 
 .gallery-4 {
-    background-image: url('../attached_assets/meal.png');
+    background-image: url('https://source.unsplash.com/random/400x400/?tropical,fruit');
 }
 
 .gallery-5 {
-    background-image: url('../attached_assets/Rice_and_Peas.png');
+    background-image: url('https://source.unsplash.com/random/400x400/?rum,cake');
 }
 
 .gallery-6 {
-    background-image: url('../attached_assets/ackee-saltfish.png');
+    background-image: url('https://source.unsplash.com/random/400x400/?caribbean,patty');
 }
 
 /*---------------------------------
@@ -765,7 +741,7 @@ p {
 .testimonials {
     padding: var(--spacing-xl) 0;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
-                url('../attached_assets/venue.png') no-repeat center/cover;
+                url('https://source.unsplash.com/random/1600x900/?caribbean,beach') no-repeat center/cover;
     color: var(--text-white);
 }
 
@@ -828,27 +804,19 @@ p {
 .quote p {
     margin: 0;
     padding: 0 var(--spacing-sm);
-    font-style: italic;
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
-.customer-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.customer-info h4 {
+.client h4 {
+    color: var(--text-white);
     font-size: 1.1rem;
     margin-bottom: 0.2rem;
-    color: var(--text-white);
 }
 
-.customer-info p {
+.stars {
+    color: var(--caribbean-yellow);
     font-size: 0.9rem;
-    color: var(--primary-light);
-    margin-bottom: 0;
 }
 
 /*---------------------------------
@@ -866,9 +834,6 @@ p {
 
 .contact-info {
     flex: 1;
-    padding: var(--spacing-md);
-    background-color: var(--bg-off-white);
-    border-radius: var(--border-radius-md);
 }
 
 .info-item {
@@ -881,20 +846,36 @@ p {
     font-size: 1.5rem;
     color: var(--primary-color);
     margin-right: var(--spacing-sm);
-    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+
+.info-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    color: var(--primary-dark);
 }
 
 .info-item p {
-    margin-bottom: 0.3rem;
+    font-size: 1rem;
     color: var(--text-medium);
+    margin-bottom: 0;
 }
 
 .contact-form {
     flex: 1;
+    background-color: var(--bg-off-white);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+}
+
+.contact-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-dark);
 }
 
 .form-group {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
 }
 
 .form-group input,
@@ -902,7 +883,7 @@ p {
     width: 100%;
     padding: 0.8rem;
     border: 1px solid var(--border-color);
-    border-radius: var(--border-radius-md);
+    border-radius: var(--border-radius-sm);
     font-family: var(--font-primary);
     font-size: 1rem;
     transition: border-color var(--transition-fast);
@@ -910,47 +891,86 @@ p {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: var(--primary-color);
     outline: none;
+    border-color: var(--primary-color);
 }
 
 .form-group textarea {
-    height: 150px;
+    min-height: 150px;
     resize: vertical;
 }
 
 /*---------------------------------
   Footer
 ---------------------------------*/
-footer {
+.footer {
     background-color: var(--bg-dark);
     color: var(--text-white);
-    padding: var(--spacing-xl) 0 var(--spacing-md);
+    padding-top: var(--spacing-lg);
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: var(--spacing-lg);
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo {
+    flex: 1 1 300px;
 }
 
 .footer-logo h2 {
-    font-size: 2rem;
     color: var(--text-white);
-    margin-bottom: 0.3rem;
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.8rem;
 }
 
 .footer-logo p {
-    font-size: 1rem;
     color: var(--text-light);
+    font-size: 1rem;
 }
 
-.social-links {
+.footer-links {
+    flex: 1 1 200px;
+}
+
+.footer-links h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-links ul li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer-links ul li a {
+    color: var(--text-light);
+    transition: color var(--transition-fast);
+}
+
+.footer-links ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-social {
+    flex: 1 1 200px;
+}
+
+.footer-social h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.social-icons {
     display: flex;
     gap: var(--spacing-sm);
 }
 
-.social-links a {
+.social-icons a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -962,21 +982,66 @@ footer {
     transition: all var(--transition-fast);
 }
 
-.social-links a:hover {
+.social-icons a:hover {
     background-color: var(--primary-color);
+    color: var(--text-white);
     transform: translateY(-5px);
 }
 
-.copyright {
+.footer-newsletter {
+    flex: 1 1 300px;
+}
+
+.footer-newsletter h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-newsletter p {
+    color: var(--text-light);
+    font-size: 1rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-newsletter form {
+    display: flex;
+    gap: var(--spacing-xs);
+}
+
+.footer-newsletter input {
+    flex: 1;
+    padding: 0.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: var(--border-radius-sm);
+    color: var(--text-white);
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+}
+
+.footer-newsletter input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.footer-bottom {
+    padding: var(--spacing-md) 0;
     text-align: center;
-    padding-top: var(--spacing-md);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.9rem;
     color: var(--text-light);
 }
 
+.footer-bottom a {
+    color: var(--primary-color);
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
 /*---------------------------------
-  Scroll Top Button
+  Scroll to Top Button
 ---------------------------------*/
 .scroll-top {
     position: fixed;
@@ -985,41 +1050,19 @@ footer {
     width: 50px;
     height: 50px;
     background-color: var(--primary-color);
+    color: var(--text-white);
     border-radius: var(--border-radius-full);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--text-white);
     font-size: 1.2rem;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    opacity: 0;
-    visibility: hidden;
-    transition: all var(--transition-fast);
     z-index: 99;
-}
-
-.scroll-top.active {
-    opacity: 1;
+    transition: all var(--transition-fast);
+    opacity: 0.8;
     visibility: visible;
 }
 
 .scroll-top:hover {
     background-color: var(--primary-dark);
-    transform: translateY(-5px);
-}
-
-/* Flame animation for featured items */
-.flame-icon {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    animation: flicker 2s infinite;
-    color: var(--caribbean-orange);
-    font-size: 1.2rem;
-}
-
-@keyframes flicker {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
+    opacity: 1;
 }
