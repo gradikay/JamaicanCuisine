@@ -421,31 +421,54 @@ nav ul li a:hover::after {
 footer {
     background-color: #000;
     color: white;
-    padding: 50px 0 20px;
+}
+
+.footer-top {
+    padding: 60px 0 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../attached_assets/restaurant.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.footer-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #009B3A, #FED100, #B20000);
 }
 
 .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
 }
 
 .footer-logo {
-    flex: 1;
-    min-width: 300px;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-logo h2 {
     color: #FED100;
     margin-bottom: 10px;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.footer-logo p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .social-links {
     display: flex;
     gap: 15px;
-    margin-top: 20px;
+    margin-top: auto;
 }
 
 .social-links a {
@@ -458,17 +481,144 @@ footer {
     color: white;
     border-radius: 50%;
     transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .social-links a:hover {
     background-color: #FED100;
     color: #000;
-    transform: translateY(-5px);
+    transform: translateY(-5px) rotate(360deg);
+}
+
+.footer-links h3, .footer-hours h3, .footer-newsletter h3 {
+    color: #FED100;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-links h3::after, .footer-hours h3::after, .footer-newsletter h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #009B3A;
+}
+
+.footer-links ul, .footer-hours ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: white;
+    transition: all 0.3s ease;
+    position: relative;
+    padding-left: 15px;
+}
+
+.footer-links a::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #FED100;
+    transition: transform 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #FED100;
+    padding-left: 20px;
+}
+
+.footer-links a:hover::before {
+    transform: translateX(5px);
+}
+
+.footer-hours ul li {
+    display: flex;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+}
+
+.footer-hours ul li span {
+    color: white;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.footer-newsletter p {
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    padding: 12px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 5px;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.newsletter-form .btn {
+    width: 100%;
+    background-color: #FED100;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.newsletter-form .btn:hover {
+    background-color: #009B3A;
+    color: white;
+}
+
+.footer-bottom {
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .copyright {
-    text-align: center;
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}
+
+.jamaica-flag {
+    display: flex;
+    height: 20px;
+    width: 60px;
+    overflow: hidden;
+}
+
+.flag-stripe {
+    flex: 1;
+    height: 100%;
+}
+
+.flag-stripe.green {
+    background-color: #009B3A;
+}
+
+.flag-stripe.yellow {
+    background-color: #FED100;
 }
