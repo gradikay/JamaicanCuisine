@@ -1,297 +1,129 @@
-/*---------------------------------
-  Responsive Styles
----------------------------------*/
+/* 
+ * Responsive.css - Caribbean Restaurant Website
+ * Handles all responsive breakpoints
+ */
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) {
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
     .container {
-        max-width: 100%;
-        padding: 0 var(--spacing-sm);
+        max-width: 960px;
     }
-    
-    .hero-content h1 {
-        font-size: 4rem;
-    }
-}
 
-/* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
-    html {
-        font-size: 15px;
-    }
-    
-    .hero-content h1 {
-        font-size: 3.5rem;
-    }
-    
-    .about-content {
-        flex-direction: column;
-    }
-    
-    .about-image, .about-text {
-        flex: none;
-        width: 100%;
-    }
-    
-    .about-image {
-        height: 350px;
-        margin-bottom: var(--spacing-md);
-    }
-    
-    .features .container {
-        flex-wrap: wrap;
-    }
-    
-    .feature-box {
-        flex: 1 1 calc(50% - var(--spacing-md));
-    }
-    
-    .catering-content {
-        flex-direction: column;
-    }
-    
-    .catering-image, .catering-info {
-        flex: none;
-        width: 100%;
-    }
-    
-    .catering-image {
-        height: 300px;
-        margin-bottom: var(--spacing-md);
-    }
-    
-    .testimonial-slider {
-        flex-wrap: wrap;
-    }
-    
-    .testimonial {
-        flex: 1 1 calc(50% - var(--spacing-md));
-        margin-bottom: var(--spacing-md);
-    }
-    
-    .contact-content {
-        flex-direction: column;
-    }
-    
-    .contact-info, .contact-form {
-        flex: none;
-        width: 100%;
-    }
-    
-    .contact-info {
-        margin-bottom: var(--spacing-md);
-    }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
-    html {
-        font-size: 14px;
-    }
-    
-    #header {
-        padding: 0.8rem 0;
-    }
-    
-    /* Mobile Navigation */
-    .nav-toggle-label {
-        display: block;
-        padding: 1rem 0;
-    }
-    
-    .nav-toggle-label span,
-    .nav-toggle-label span::before,
-    .nav-toggle-label span::after {
-        display: block;
-        background: var(--text-white);
-        height: 2px;
-        width: 2rem;
-        border-radius: 2px;
-        position: relative;
-    }
-    
-    .nav-toggle-label span::before,
-    .nav-toggle-label span::after {
-        content: '';
-        position: absolute;
-    }
-    
-    .nav-toggle-label span::before {
-        bottom: 7px;
-    }
-    
-    .nav-toggle-label span::after {
-        top: 7px;
-    }
-    
-    .nav-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: var(--bg-dark);
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 0;
-        overflow: hidden;
-        transition: height var(--transition-medium);
-        z-index: 100;
-    }
-    
-    .nav-toggle:checked ~ .nav-menu {
-        height: 350px;
-        padding: var(--spacing-md) 0;
-    }
-    
-    .nav-menu li {
-        margin: var(--spacing-xs) 0;
-        opacity: 0;
-        transform: translateY(-10px);
-        transition: all var(--transition-medium);
-        transition-delay: calc(0.05s * var(--i, 0));
-    }
-    
-    .nav-toggle:checked ~ .nav-menu li {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    
-    /* Set individual transition delays for each menu item */
-    .nav-menu li:nth-child(1) { --i: 1; }
-    .nav-menu li:nth-child(2) { --i: 2; }
-    .nav-menu li:nth-child(3) { --i: 3; }
-    .nav-menu li:nth-child(4) { --i: 4; }
-    .nav-menu li:nth-child(5) { --i: 5; }
-    .nav-menu li:nth-child(6) { --i: 6; }
-    .nav-menu li:nth-child(7) { --i: 7; }
-    
     .hero-content h1 {
         font-size: 3rem;
     }
-    
-    .hero-content h2 {
-        font-size: 1.5rem;
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
     }
-    
-    .hero-buttons {
+
+    .about-content, .contact-content {
         flex-direction: column;
-        gap: var(--spacing-xs);
-        width: 80%;
-        margin: 0 auto;
     }
-    
-    .feature-box {
-        flex: 1 1 100%;
+
+    .about-image {
+        margin-bottom: 30px;
     }
-    
-    .menu-tabs {
-        overflow-x: auto;
-        padding-bottom: var(--spacing-xs);
-        justify-content: flex-start;
-    }
-    
-    .menu-tab {
-        flex-shrink: 0;
-    }
-    
+
     .menu-items {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
-    
-    .gallery-container {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
-    
-    .testimonial {
-        flex: 1 1 100%;
-    }
-    
-    .catering-options {
-        flex-direction: column;
-    }
-    
-    .option {
-        flex: none;
-        width: 100%;
-        margin-bottom: var(--spacing-xs);
-    }
-    
-    .footer-content {
-        flex-direction: column;
-        gap: var(--spacing-md);
-    }
-    
-    .footer-logo, .footer-links, .footer-social, .footer-newsletter {
-        flex: none;
-        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
-    html {
-        font-size: 13px;
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 540px;
     }
     
-    .logo h1 {
-        font-size: 1.5rem;
+    /* Mobile Menu Toggle */
+    .menu-toggle {
+        display: block;
     }
     
-    .section-header h2 {
-        font-size: 2rem;
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+    }
+    
+    nav.active {
+        max-height: 400px;
+        padding: 20px 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 10px;
     }
     
     .hero-content h1 {
         font-size: 2.5rem;
     }
     
-    .hero-content p {
-        font-size: 1rem;
+    .section-title {
+        font-size: 2rem;
     }
     
-    .about-text h3, .catering-info h3 {
-        font-size: 1.5rem;
+    .menu-categories {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 15px;
     }
     
-    .about-image {
-        height: 250px;
-    }
-    
-    .about-image::before {
-        top: -10px;
-        left: -10px;
-        border-width: 2px;
-    }
-    
-    .footer-newsletter form {
-        flex-direction: column;
-    }
-    
-    .footer-newsletter .btn {
-        width: 100%;
-    }
-    
-    .scroll-top {
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
-        bottom: 20px;
-        right: 20px;
+    .menu-tab {
+        flex: 0 0 auto;
     }
 }
 
-/* Extra small devices */
-@media (max-width: 400px) {
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    
     .hero-content h1 {
         font-size: 2rem;
     }
     
-    .feature-icon {
-        font-size: 2rem;
+    .about-text, .contact-info, .contact-form {
+        padding: 0 15px;
     }
     
-    .gallery-image {
-        height: 200px;
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
     }
 }
