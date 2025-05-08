@@ -437,6 +437,23 @@ nav ul li a:hover::after {
     font-family: Georgia, serif;
 }
 
+.menu-item-content h3::before {
+    content: '❧';
+    position: absolute;
+    right: -25px;
+    top: 0;
+    font-size: 16px;
+    color: #FED100;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover .menu-item-content h3::before {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .menu-item-content h3::after {
     content: '';
     position: absolute;
@@ -460,6 +477,76 @@ nav ul li a:hover::after {
     font-style: italic;
     text-align: justify;
     font-size: 0.95rem;
+}
+
+.romantic-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,
+        rgba(255, 249, 240, 0.95),
+        rgba(255, 245, 230, 0.98)
+    );
+    padding: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.5s cubic-bezier(0.29, 0.9, 0.32, 0.97);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+    box-shadow: inset 0 0 20px rgba(254, 209, 0, 0.1);
+    z-index: 10;
+    overflow: hidden;
+}
+
+.romantic-description::before {
+    content: '❝';
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 50px;
+    color: rgba(0, 155, 58, 0.1);
+    font-family: Georgia, serif;
+}
+
+.romantic-description::after {
+    content: '❞';
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    font-size: 50px;
+    color: rgba(178, 0, 0, 0.1);
+    font-family: Georgia, serif;
+}
+
+.menu-item:hover .romantic-description {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.romantic-description p {
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    font-style: italic;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+    position: relative;
+    max-width: 90%;
+}
+
+.romantic-description p::first-letter {
+    font-size: 1.5em;
+    color: #009B3A;
 }
 
 .price {
