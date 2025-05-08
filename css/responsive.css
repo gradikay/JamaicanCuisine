@@ -106,8 +106,35 @@
         font-size: 2rem;
     }
     
-    .about-text, .contact-info, .contact-form {
+    .about-text {
         padding: 0 15px;
+    }
+    
+    .contact-intro {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-card {
+        margin: 0 15px;
+    }
+    
+    .contact-form-container {
+        margin: 0 15px;
+        padding: 20px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .wave {
+        height: 70px;
     }
     
     .menu-items {
