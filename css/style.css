@@ -178,6 +178,127 @@ nav ul li a:hover::after {
     padding: 20px;
 }
 
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* Heading Animation */
+.animated-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.animated-word {
+    display: inline-block;
+    animation: wordFade 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 2;
+}
+
+.animated-word:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.animated-word:nth-child(2) {
+    animation-delay: 0.9s;
+    color: #FED100;
+}
+
+.animated-word:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.spice-animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.spice {
+    position: absolute;
+    font-size: 1.5rem;
+    opacity: 0;
+    animation: spiceFloat 6s ease-in-out infinite;
+}
+
+.spice1 {
+    color: #B20000;
+    top: 20%;
+    left: 20%;
+    animation-delay: 2.2s;
+}
+
+.spice2 {
+    color: #FED100;
+    top: 50%;
+    right: 30%;
+    animation-delay: 2.5s;
+}
+
+.spice3 {
+    color: #009B3A;
+    bottom: 20%;
+    left: 40%;
+    animation-delay: 2.8s;
+}
+
+@keyframes wordFade {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+        text-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(0) scale(1.1);
+        text-shadow: 0 0 30px rgba(0,0,0,0.8), 0 0 10px rgba(255,255,255,0.3);
+    }
+    80% {
+        transform: translateY(0) scale(1.1);
+        text-shadow: 0 0 30px rgba(0,0,0,0.8), 0 0 10px rgba(255,255,255,0.3);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@keyframes spiceFloat {
+    0% {
+        opacity: 0;
+        transform: translate(0, 0) rotate(0deg);
+    }
+    10% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0.8;
+        transform: translate(40px, -60px) rotate(20deg);
+    }
+    80% {
+        opacity: 0.6;
+        transform: translate(-20px, -100px) rotate(-15deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, -120px) rotate(0deg);
+    }
+}
+
 @keyframes wave {
     0%, 100% { transform: translateY(0); }
     25% { transform: translateY(-10px); }
