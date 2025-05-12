@@ -3093,6 +3093,10 @@ nav ul li a:hover::after {
 }
 
 .form-row .form-group {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
     flex: 1;
 }
 
