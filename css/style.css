@@ -1466,9 +1466,9 @@ nav ul li a:hover::after {
 }
 
 .fact-number {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.2;
-    word-break: break-word;
+    white-space: nowrap;
     max-width: 100%;
 }
 
