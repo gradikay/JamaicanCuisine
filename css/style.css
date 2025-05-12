@@ -311,18 +311,7 @@ nav ul li a:hover::after {
     100% { background-position: 0% 50%; }
 }
 
-.hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-    background: linear-gradient(45deg, #FED100, #009B3A, #B20000, #FED100);
-    background-size: 300% 300%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: none;
-    animation: gradient 8s ease infinite, wave 3s ease-in-out infinite;
-    display: inline-block;
-}
+/* Previous hero heading style - replaced with animated version */
 
 .hero-content p {
     font-size: 1.3rem;
