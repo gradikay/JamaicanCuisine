@@ -7,7 +7,18 @@ document.querySelector('.menu-toggle').addEventListener('click', function() {
 if (document.querySelector('.menu-tab')) {
     const menuTabs = document.querySelectorAll('.menu-tab');
     const menuSections = document.querySelectorAll('.menu-items');
-
+    
+    // Set initial state - hide all sections except the first one (Main Dishes)
+    menuSections.forEach((section, index) => {
+        if (index === 0) {
+            // First section (mains) should be visible
+            section.style.display = 'grid';
+        } else {
+            // All other sections should be hidden
+            section.style.display = 'none';
+        }
+    });
+    
     menuTabs.forEach(tab => {
         tab.addEventListener('click', () => {
             // Remove active class from all tabs
