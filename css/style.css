@@ -121,8 +121,17 @@ img {
 }
 
 .btn:hover::before {
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
     transform: scaleX(1);
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    -o-transform-origin: left;
     transform-origin: left;
+}
 }
 
 .btn::after {
@@ -510,9 +519,44 @@ nav ul li a:hover::after {
 }
 
 .featured-items {
+    /* Fallback for older browsers */
+    display: block;
+    text-align: center;
+    /* Modern browsers */
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
+}
+
+/* Fallback for browsers that don't support grid */
+@supports not (display: grid) {
+    .featured-items::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .featured-item {
+        display: inline-block;
+        width: calc(33.33% - 30px);
+        margin: 15px;
+        vertical-align: top;
+    }
+    
+    @media (max-width: 992px) {
+        .featured-item {
+            width: calc(50% - 30px);
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .featured-item {
+            width: 100%;
+            margin: 15px 0;
+        }
+    }
 }
 
 .featured-item {
@@ -3189,8 +3233,17 @@ footer {
     background: linear-gradient(45deg, #009B3A, #009B3A 60%, #00B347);
     z-index: -1;
     transition: transform 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
-    transform: scaleX(0);
-    transform-origin: right;
+.newsletter-form .btn:hover::before {
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    -o-transform-origin: left;
+    transform-origin: left;
 }
 
 .newsletter-form .btn:hover {
