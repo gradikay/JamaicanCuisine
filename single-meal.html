@@ -331,250 +331,136 @@
                     </div>
                 </div>
                 
-                <!-- Sides Selection -->
-                <div class="option-group">
-                    <h3>Sides <span>(Choose up to 11)</span></h3>
-                    <div class="options">
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="sides" id="plantain-chips-green" value="plantain-chips-green">
-                            <label for="plantain-chips-green">
-                                <div class="option-name">Plantain Chips & Green Herb Sauce</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$3.00</span>
+                <!-- Sides and Drinks - Collapsible Sections -->
+                <div class="option-group collapsible-group">
+                    <div class="collapsible-header">
+                        <h3>Sides & Drinks <span>(Optional)</span></h3>
+                        <button type="button" class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="collapsible-content" style="display: none;">
+                        <!-- Sides Selection -->
+                        <div class="sub-option-group">
+                            <h4>Sides <span>(Choose up to 11)</span></h4>
+                            <div class="options">
+                                <div class="option-item checkbox-item">
+                                    <input type="checkbox" name="sides" id="plantain-chips-green" value="plantain-chips-green">
+                                    <label for="plantain-chips-green">
+                                        <div class="option-name">Plantain Chips & Green Herb Sauce</div>
+                                        <div class="option-details">
+                                            <span class="option-price">+$3.00</span>
+                                        </div>
+                                    </label>
                                 </div>
-                            </label>
+                                
+                                <div class="option-item checkbox-item">
+                                    <input type="checkbox" name="sides" id="plantain-chips-hot" value="plantain-chips-hot">
+                                    <label for="plantain-chips-hot">
+                                        <div class="option-name">Plantain Chips & Scotch Bonnet Sauce</div>
+                                        <div class="option-details">
+                                            <span class="option-price">+$3.00</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                
+                                <div class="option-item checkbox-item">
+                                    <input type="checkbox" name="sides" id="plantain-chips" value="plantain-chips">
+                                    <label for="plantain-chips">
+                                        <div class="option-name">Plantain Chips</div>
+                                        <div class="option-details">
+                                            <span class="option-price">+$2.45</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                
+                                <div class="option-item checkbox-item">
+                                    <input type="checkbox" name="sides" id="side-roti" value="side-roti">
+                                    <label for="side-roti">
+                                        <div class="option-name">Roti on the Side</div>
+                                        <div class="option-details">
+                                            <span class="option-price">+$0.65</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                
+                                <div class="option-item checkbox-item">
+                                    <input type="checkbox" name="sides" id="chips-coconut" value="chips-coconut">
+                                    <label for="chips-coconut">
+                                        <div class="option-name">Plantain Chips & Coconut Curry</div>
+                                        <div class="option-details">
+                                            <span class="option-price">+$6.05</span>
+                                            <span class="popular-tag">⭐️ Popular</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                         
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="sides" id="plantain-chips-hot" value="plantain-chips-hot">
-                            <label for="plantain-chips-hot">
-                                <div class="option-name">Plantain Chips & Scotch Bonnet Sauce</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$3.00</span>
+                        <!-- Drinks Selection -->
+                        <div class="sub-option-group">
+                            <h4>Drinks <span>(Choose up to 11)</span></h4>
+                            <div class="options">
+                                <div class="option-item checkbox-item">
+                                    <input type="checkbox" name="drinks" id="sorrel" value="sorrel">
+                                    <label for="sorrel">
+                                        <div class="option-name">Sorrel (Hibiscus) Drink</div>
+                                        <div class="option-details">
+                                            <span class="option-price">+$4.15</span>
+                                        </div>
+                                    </label>
                                 </div>
-                            </label>
-                        </div>
-                        
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="sides" id="plantain-chips-mango" value="plantain-chips-mango">
-                            <label for="plantain-chips-mango">
-                                <div class="option-name">Plantain Chips & Mango Salsa</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$3.00</span>
+                                
+                                <div class="option-item checkbox-item">
+                                    <input type="checkbox" name="drinks" id="mango-juice" value="mango-juice">
+                                    <label for="mango-juice">
+                                        <div class="option-name">Mango Juice</div>
+                                        <div class="option-details">
+                                            <span class="option-price">+$4.15</span>
+                                        </div>
+                                    </label>
                                 </div>
-                            </label>
-                        </div>
-                        
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="sides" id="plantain-chips-pineapple" value="plantain-chips-pineapple">
-                            <label for="plantain-chips-pineapple">
-                                <div class="option-name">Plantain Chips & Pineapple Salsa</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$3.00</span>
+                                
+                                <div class="option-item checkbox-item">
+                                    <input type="checkbox" name="drinks" id="ginger-beer" value="ginger-beer">
+                                    <label for="ginger-beer">
+                                        <div class="option-name">Jamaican Ginger Beer</div>
+                                        <div class="option-details">
+                                            <span class="option-price">+$4.55</span>
+                                        </div>
+                                    </label>
                                 </div>
-                            </label>
-                        </div>
-                        
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="sides" id="plantain-chips" value="plantain-chips">
-                            <label for="plantain-chips">
-                                <div class="option-name">Plantain Chips</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$2.45</span>
+                                
+                                <div class="option-item checkbox-item">
+                                    <input type="checkbox" name="drinks" id="coconut-water" value="coconut-water">
+                                    <label for="coconut-water">
+                                        <div class="option-name">Coconut Water</div>
+                                        <div class="option-details">
+                                            <span class="option-price">+$4.50</span>
+                                        </div>
+                                    </label>
                                 </div>
-                            </label>
-                        </div>
-                        
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="sides" id="large-plantain-chips" value="large-plantain-chips">
-                            <label for="large-plantain-chips">
-                                <div class="option-name">Large Plantain Chips</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$3.50</span>
+                                
+                                <div class="option-item checkbox-item">
+                                    <input type="checkbox" name="drinks" id="ting" value="ting">
+                                    <label for="ting">
+                                        <div class="option-name">Jamaican Ting</div>
+                                        <div class="option-details">
+                                            <span class="option-price">+$4.50</span>
+                                            <span class="popular-tag">⭐️ Popular</span>
+                                        </div>
+                                    </label>
                                 </div>
-                            </label>
-                        </div>
-                        
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="sides" id="side-roti" value="side-roti">
-                            <label for="side-roti">
-                                <div class="option-name">Roti on the Side</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$0.65</span>
-                                </div>
-                            </label>
-                        </div>
-                        
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="sides" id="side-coconut" value="side-coconut">
-                            <label for="side-coconut">
-                                <div class="option-name">Side of Coconut Curry Sauce</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$3.60</span>
-                                </div>
-                            </label>
-                        </div>
-                        
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="sides" id="chips-avocado" value="chips-avocado">
-                            <label for="chips-avocado">
-                                <div class="option-name">Plantain Chips & Avocado</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$6.05</span>
-                                </div>
-                            </label>
-                        </div>
-                        
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="sides" id="side-avocado" value="side-avocado">
-                            <label for="side-avocado">
-                                <div class="option-name">Side of Avocado</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$3.60</span>
-                                </div>
-                            </label>
-                        </div>
-                        
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="sides" id="chips-coconut" value="chips-coconut">
-                            <label for="chips-coconut">
-                                <div class="option-name">Plantain Chips & Coconut Curry Sauce</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$6.05</span>
-                                    <span class="popular-tag">⭐️ Popular</span>
-                                </div>
-                            </label>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Drinks Selection -->
-                <div class="option-group">
-                    <h3>Drinks <span>(Choose up to 11)</span></h3>
-                    <div class="options">
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="drinks" id="sorrel" value="sorrel">
-                            <label for="sorrel">
-                                <div class="option-name">Sorrel (Hibiscus) Drink</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$4.15</span>
-                                </div>
-                            </label>
-                        </div>
-                        
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="drinks" id="mango-juice" value="mango-juice">
-                            <label for="mango-juice">
-                                <div class="option-name">Mango Juice</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$4.15</span>
-                                </div>
-                            </label>
-                        </div>
-                        
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="drinks" id="ginger-beer" value="ginger-beer">
-                            <label for="ginger-beer">
-                                <div class="option-name">Jamaican Ginger Beer</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$4.55</span>
-                                </div>
-                            </label>
-                        </div>
-                        
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="drinks" id="pineapple-juice" value="pineapple-juice">
-                            <label for="pineapple-juice">
-                                <div class="option-name">Pineapple Juice</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$4.55</span>
-                                </div>
-                            </label>
-                        </div>
-                        
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="drinks" id="coconut-water" value="coconut-water">
-                            <label for="coconut-water">
-                                <div class="option-name">Coconut Water</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$4.50</span>
-                                </div>
-                            </label>
-                        </div>
-                        
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="drinks" id="water" value="water">
-                            <label for="water">
-                                <div class="option-name">Still Water</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$4.10</span>
-                                </div>
-                            </label>
-                        </div>
-                        
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="drinks" id="guava-juice" value="guava-juice">
-                            <label for="guava-juice">
-                                <div class="option-name">Guava Juice</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$4.50</span>
-                                </div>
-                            </label>
-                        </div>
-                        
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="drinks" id="passion-fruit" value="passion-fruit">
-                            <label for="passion-fruit">
-                                <div class="option-name">Passion Fruit Juice</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$4.50</span>
-                                </div>
-                            </label>
-                        </div>
-                        
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="drinks" id="ting" value="ting">
-                            <label for="ting">
-                                <div class="option-name">Jamaican Ting</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$4.50</span>
-                                    <span class="popular-tag">⭐️ Popular</span>
-                                </div>
-                            </label>
-                        </div>
-                        
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="drinks" id="dg-ginger-beer" value="dg-ginger-beer">
-                            <label for="dg-ginger-beer">
-                                <div class="option-name">D&G Ginger Beer</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$4.50</span>
-                                </div>
-                            </label>
-                        </div>
-                        
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="drinks" id="sparkling-water" value="sparkling-water">
-                            <label for="sparkling-water">
-                                <div class="option-name">Sparkling Water</div>
-                                <div class="option-details">
-                                    <span class="option-price">+$4.50</span>
-                                </div>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Utensils Selection -->
-                <div class="option-group">
-                    <h3>Napkins and Utensils <span>(Choose up to 1)</span></h3>
-                    <div class="options">
-                        <div class="option-item checkbox-item">
-                            <input type="checkbox" name="utensils" id="utensils" value="utensils">
-                            <label for="utensils">
-                                <div class="option-name">Napkins and Utensils</div>
-                            </label>
-                        </div>
+                <!-- Utensils as inline option -->
+                <div class="option-group simple-option">
+                    <div class="simple-checkbox">
+                        <input type="checkbox" name="utensils" id="utensils" value="utensils">
+                        <label for="utensils">
+                            <span>Include napkins and utensils with my order</span>
+                        </label>
                     </div>
                 </div>
                 
@@ -661,7 +547,7 @@
     </footer>
 
     <script>
-        // Simple script to update order summary
+        // Script for customization form functionality
         document.addEventListener('DOMContentLoaded', function() {
             const form = document.querySelector('.customization-form');
             const summaryTotal = document.querySelector('.summary-total span:last-child');
@@ -706,6 +592,25 @@
             form.addEventListener('submit', function(e) {
                 e.preventDefault();
                 alert('Item added to cart: $' + total.toFixed(2));
+            });
+            
+            // Handle collapsible sections
+            const collapsibleHeaders = document.querySelectorAll('.collapsible-header');
+            
+            collapsibleHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const toggleBtn = this.querySelector('.toggle-btn');
+                    
+                    // Toggle display of content
+                    if (content.style.display === 'none' || content.style.display === '') {
+                        content.style.display = 'block';
+                        toggleBtn.classList.add('active');
+                    } else {
+                        content.style.display = 'none';
+                        toggleBtn.classList.remove('active');
+                    }
+                });
             });
         });
     </script>
