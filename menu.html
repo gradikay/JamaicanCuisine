@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Island Flavors Caribbean Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Island Flavors</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Our Menu</h1>
+            <p>Authentic Caribbean flavors to delight your taste buds</p>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-categories">
+                <button class="menu-tab active" data-category="mains">Main Dishes</button>
+                <button class="menu-tab" data-category="sides">Sides</button>
+                <button class="menu-tab" data-category="desserts">Desserts</button>
+                <button class="menu-tab" data-category="drinks">Drinks</button>
+            </div>
+            
+            <div class="menu-items" id="mains">
+                <div class="menu-item">
+                    <img src="attached_assets/jerk-chicken.png" alt="Jerk Chicken">
+                    <div class="menu-item-content">
+                        <h3>Jerk Chicken</h3>
+                        <p>Spicy marinated chicken grilled to perfection with our special blend of Jamaican spices.</p>
+                        <span class="price">$16.99</span>
+                        <div class="romantic-description">
+                            <p>A dance of flames and spices caress succulent chicken, releasing an aromatic symphony that transports you to sun-drenched shores. Each bite reveals layers of passion – smoky, fiery, and utterly intoxicating.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="attached_assets/curry-goat.png" alt="Curry Goat">
+                    <div class="menu-item-content">
+                        <h3>Curry Goat</h3>
+                        <p>Tender goat meat slow-cooked in a rich curry sauce with potatoes and island spices.</p>
+                        <span class="price">$18.99</span>
+                        <div class="romantic-description">
+                            <p>Each tender morsel tells a story of time and patience, simmered in a golden elixir of spices that dance together in perfect harmony. The velvety sauce, kissed by exotic spices, whispers secrets of faraway shores.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="attached_assets/Oxtail_Stew.png" alt="Oxtail Stew">
+                    <div class="menu-item-content">
+                        <h3>Oxtail Stew</h3>
+                        <p>Tender oxtail slow-cooked in a rich, savory sauce with butter beans, carrots, and island spices.</p>
+                        <span class="price">$19.99</span>
+                        <div class="romantic-description">
+                            <p>A luscious serenade of fall-off-the-bone tenderness, bathed in a sumptuous sauce that has simmered for hours, absorbing the essence of herbs and spices. Each spoonful is a velvet embrace, a symphony of depth and comfort.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="attached_assets/ackee-saltfish.png" alt="Ackee and Saltfish">
+                    <div class="menu-item-content">
+                        <h3>Ackee and Saltfish</h3>
+                        <p>Jamaica's national dish featuring ackee fruit sautéed with salt cod, onions, tomatoes, and spices.</p>
+                        <span class="price">$17.99</span>
+                        <div class="romantic-description">
+                            <p>Jamaica's treasure on a plate – buttery ackee fruit embraces flakes of salt cod in a sensual dance of flavors. Delicate yet bold, this passionate union of land and sea speaks of island heritage, a culinary love letter to generations past.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-items" id="sides" style="display: none;">
+                <div class="menu-item">
+                    <img src="attached_assets/Rice_and_Peas.png" alt="Rice and Peas">
+                    <div class="menu-item-content">
+                        <h3>Rice and Peas</h3>
+                        <p>Traditional Caribbean rice cooked with kidney beans, coconut milk, thyme, and scallions.</p>
+                        <span class="price">$5.99</span>
+                        <div class="romantic-description">
+                            <p>Pearly grains of rice nestled with ruby beans, infused with the gentle caress of coconut milk and aromatic herbs. This island staple offers comfort in every forkful—a humble masterpiece that elevates any Caribbean feast.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="attached_assets/Fried_Plantains.png" alt="Fried Plantains">
+                    <div class="menu-item-content">
+                        <h3>Fried Plantains</h3>
+                        <p>Sweet, ripe plantains fried until golden and caramelized.</p>
+                        <span class="price">$4.99</span>
+                        <div class="romantic-description">
+                            <p>Golden crescents of sweet temptation, each slice transformed by fire into succulent morsels of caramelized delight. Their edges crisp, their centers tender—nature's candy offering a blissful contrast to savory island dishes.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="attached_assets/Callaloo_on_a_plate.png" alt="Callaloo">
+                    <div class="menu-item-content">
+                        <h3>Callaloo</h3>
+                        <p>Leafy greens simmered with onions, garlic, and coconut milk. A nutritious side dish.</p>
+                        <span class="price">$6.99</span>
+                        <div class="romantic-description">
+                            <p>Emerald leaves surrender to a silken bath of coconut milk, emerging transformed and tender. This verdant delicacy, perfumed with garlic and onion, offers a taste of the island's fertile soul—a Caribbean embrace in every spoonful.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="attached_assets/meal.png" alt="Festival">
+                    <div class="menu-item-content">
+                        <h3>Festival</h3>
+                        <p>Sweet cornmeal dumplings, fried until crisp on the outside and soft inside.</p>
+                        <span class="price">$3.99</span>
+                        <div class="romantic-description">
+                            <p>These golden fingers of joy dance between sweetness and warmth, their crisp exterior yielding to reveal a tender heart within. Like island celebrations in edible form, each bite brings a moment of pure, comforting bliss.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-items" id="desserts" style="display: none;">
+                <div class="menu-item">
+                    <img src="attached_assets/bread.png" alt="Coconut Bread Pudding">
+                    <div class="menu-item-content">
+                        <h3>Coconut Bread Pudding</h3>
+                        <p>Warm bread pudding made with coconut milk, cinnamon, and nutmeg, topped with rum sauce.</p>
+                        <span class="price">$6.99</span>
+                        <div class="romantic-description">
+                            <p>A cloud of sweet nostalgia, this bread pudding whispers of Caribbean evenings and spiced rum breezes. The coconut-infused custard embraces each soft morsel of bread, while aromatic spices dance across your palate like island rhythms.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="attached_assets/duplin.png" alt="Sweet Potato Pudding">
+                    <div class="menu-item-content">
+                        <h3>Sweet Potato Pudding</h3>
+                        <p>A rich, spiced pudding made with sweet potatoes, coconut milk, and island spices.</p>
+                        <span class="price">$7.99</span>
+                        <div class="romantic-description">
+                            <p>This velvety masterpiece is the soul of comfort, carrying centuries of tradition in every spoonful. Earth-kissed sweet potatoes meld with coconut's tropical embrace, while cinnamon, nutmeg and vanilla perform their timeless seduction.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="attached_assets/restaurant_food_on_a_wooden_table.png" alt="Rum Cake">
+                    <div class="menu-item-content">
+                        <h3>Rum Cake</h3>
+                        <p>Traditional Jamaican cake infused with dark rum and dried fruits.</p>
+                        <span class="price">$8.99</span>
+                        <div class="romantic-description">
+                            <p>The spirit of celebration captured in moist, decadent form. Dark rum-soaked fruits nestled within golden crumb create an intoxicating symphony that lingers on the palate like a lovers' kiss. This is dessert as ritual, as ceremony, as pure joy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-items" id="drinks" style="display: none;">
+                <div class="menu-item">
+                    <img src="attached_assets/restaurant_food_on_a_wooden_table2.png" alt="Sorrel Drink">
+                    <div class="menu-item-content">
+                        <h3>Sorrel Drink</h3>
+                        <p>Refreshing hibiscus drink infused with ginger, cinnamon, and cloves.</p>
+                        <span class="price">$3.99</span>
+                        <div class="romantic-description">
+                            <p>Ruby-red nectar twinkling with festive spices, this traditional island elixir cools and invigorates. Hibiscus petals yield their tart essence to create a drink that dances between sweet fragrance and spicy warmth—pure refreshment with Caribbean flair.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="attached_assets/restaurant_food_on_a_wooden_table2.png" alt="Rum Punch">
+                    <div class="menu-item-content">
+                        <h3>Rum Punch</h3>
+                        <p>A tropical blend of fruit juices with white and dark rum.</p>
+                        <span class="price">$8.99</span>
+                        <div class="romantic-description">
+                            <p>Liquid sunshine in a glass, this kaleidoscope of tropical fruits dances with premium island rums. Each sip transports you to swaying palms and azure waters—a sensual symphony of sweet and spirited that embodies the Caribbean's joyful soul.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="attached_assets/restaurant_food_on_a_wooden_table2.png" alt="Blue Mountain Coffee">
+                    <div class="menu-item-content">
+                        <h3>Blue Mountain Coffee</h3>
+                        <p>Premium Jamaican coffee with a smooth, rich flavor.</p>
+                        <span class="price">$4.99</span>
+                        <div class="romantic-description">
+                            <p>The pride of Jamaica, this exquisite coffee offers notes of chocolate and sweet herbs cradled in velvety smoothness. Grown in misty mountain heights, each perfectly roasted bean tells a story of morning fog, rich soil, and artisanal dedication.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="reggae-top-border"></div>
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-intro">Feel the rhythm and reach out to us. One love, one heart!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <div class="contact-icon-wrapper">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Our Location</h3>
+                        </div>
+                        <p>123 Ocean Drive, Caribbean Beach</p>
+                        <div class="card-decoration"></div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <div class="contact-icon-wrapper">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>Call Us</h3>
+                        </div>
+                        <p>+1 (555) 123-4567</p>
+                        <div class="card-decoration"></div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <div class="contact-icon-wrapper">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email Us</h3>
+                        </div>
+                        <p>info@islandflavors.com</p>
+                        <div class="card-decoration"></div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <div class="contact-icon-wrapper">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Opening Hours</h3>
+                        </div>
+                        <p>Tuesday - Sunday: 11:00 AM - 10:00 PM</p>
+                        <p>Monday: Closed</p>
+                        <div class="card-decoration"></div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <!-- Music note decorative elements -->
+                    <div class="music-note-1">♫</div>
+                    <div class="music-note-2">♬</div>
+                    
+                    <div class="form-header">
+                        <h3>Send Us a Message</h3>
+                        <div class="form-decoration">
+                            <span></span>
+                            <i class="fas fa-music"></i>
+                            <span></span>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name"><i class="fas fa-user" style="color: #009B3A; margin-right: 5px;"></i> Your Name</label>
+                                <input type="text" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope" style="color: #FED100; margin-right: 5px;"></i> Your Email</label>
+                                <input type="email" id="email" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject"><i class="fas fa-tag" style="color: #B20000; margin-right: 5px;"></i> Subject</label>
+                            <input type="text" id="subject" placeholder="Enter subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment" style="color: #009B3A; margin-right: 5px;"></i> Message</label>
+                            <textarea id="message" placeholder="Write your message here..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn reggae-btn">
+                            <span class="btn-text">Send Good Vibes</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="reggae-bottom-decoration">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <h2>Island Flavors</h2>
+                        <p>Taste the Caribbean</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-hours">
+                        <h3>Opening Hours</h3>
+                        <ul>
+                            <li><span>Monday:</span> Closed</li>
+                            <li><span>Tuesday-Friday:</span> 11:00 AM - 10:00 PM</li>
+                            <li><span>Saturday:</span> 10:00 AM - 11:00 PM</li>
+                            <li><span>Sunday:</span> 10:00 AM - 9:00 PM</li>
+                        </ul>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe for special offers and updates</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your Email" required>
+                            <button type="submit" class="btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright">
+                    <p>&copy; 2025 Island Flavors. All Rights Reserved.</p>
+                </div>
+                <div class="jamaica-flag">
+                    <div class="flag-stripe green"></div>
+                    <div class="flag-stripe yellow"></div>
+                    <div class="flag-stripe green"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
