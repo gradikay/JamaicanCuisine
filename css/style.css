@@ -363,6 +363,9 @@ nav ul li a:hover::after {
     height: 100%;
     object-fit: cover;
     z-index: 1;
+    display: block;
+    aspect-ratio: 16/9;
+    max-height: 100vh;
 }
 
 .hero-overlay {
@@ -853,9 +856,17 @@ nav ul li a:hover::after {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-.featured-item img {
+.image-container {
     width: 100%;
     height: 250px;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 4/3;
+}
+
+.featured-item img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     transition: transform 0.6s ease;
 }
