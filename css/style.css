@@ -212,7 +212,7 @@ img {
 
 /* Header Styles */
 header {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: black;
     color: white;
     padding: 15px 0;
     position: fixed;
