@@ -1163,10 +1163,12 @@ nav ul li a:hover::after {
 
 .location-details {
     width: 350px;
+    max-width: 100%;
     padding: 30px;
     background: linear-gradient(45deg, #009B3A, #006a28);
     position: relative;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .location-card {

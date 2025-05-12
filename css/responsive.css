@@ -183,6 +183,33 @@
         padding: 0 15px;
     }
     
+    /* Contact page responsive styles */
+    .map-content {
+        flex-direction: column;
+    }
+    
+    .map-frame {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .location-details {
+        width: 100%;
+    }
+    
+    .contact-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-form-container {
+        width: 100%;
+    }
+    
     /* Map section for small screens */
     .map-section {
         padding: 60px 0 40px;
