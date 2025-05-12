@@ -2387,12 +2387,29 @@ nav ul li a:hover::after {
 /* Contact Section */
 .contact {
     padding: 100px 0 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('../assets/images/venue.png');
-    background-size: cover;
-    background-position: center;
     color: white;
     position: relative;
     overflow: hidden;
+}
+
+.contact-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.contact-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2;
 }
 
 .contact::before {
@@ -2428,6 +2445,8 @@ nav ul li a:hover::after {
 .contact .section-title {
     color: #FED100;
     margin-bottom: 15px;
+    position: relative;
+    z-index: 3;
 }
 
 .contact-intro {
@@ -2436,6 +2455,8 @@ nav ul li a:hover::after {
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: 50px;
     font-style: italic;
+    position: relative;
+    z-index: 3;
 }
 
 .contact-content {
@@ -2443,6 +2464,8 @@ nav ul li a:hover::after {
     flex-wrap: wrap;
     gap: 50px;
     margin-bottom: 70px;
+    position: relative;
+    z-index: 3;
 }
 
 .contact-info {
