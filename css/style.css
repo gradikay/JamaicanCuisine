@@ -258,6 +258,7 @@ header .container {
     gap: 10px;
     /* Fallback for browsers that don't support gap */
     margin-right: -10px;
+    text-decoration: none;
 }
 .logo > * {
     margin-right: 10px;
