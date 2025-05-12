@@ -26,9 +26,122 @@
     <link rel="icon" href="assets/spice-logo.svg" type="image/svg+xml">
     
     <title>Menu | Island Flavors | Authentic Jamaican Cuisine</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- Preload important resources -->
+    <link rel="preload" href="assets/spice-logo.svg" as="image" type="image/svg+xml">
+    
+    <!-- Inline critical CSS -->
+    <style>
+    /* Critical CSS for above-the-fold content */
+    *, *::before, *::after {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f9f9f9;
+        overflow-x: hidden;
+        padding-top: 80px;
+        margin: 0;
+    }
+    
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    
+    /* Header Styles */
+    header {
+        background-color: rgba(0, 0, 0, 0.85);
+        color: white;
+        padding: 15px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    header .container {
+        display: -webkit-box;
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        height: 50px;
+        margin-right: 10px;
+    }
+    
+    /* Page Banner */
+    .page-banner {
+        height: 40vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        overflow: hidden;
+        margin-top: -80px;
+        padding-top: 80px;
+    }
+    
+    /* Menu Tabs */
+    .menu-tabs {
+        display: flex;
+        justify-content: center;
+        margin: 40px 0;
+        flex-wrap: wrap;
+    }
+    
+    .tab-button {
+        padding: 12px 25px;
+        margin: 0 5px 10px;
+        background-color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: bold;
+        color: #333;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    </style>
+    
+    <!-- Defer non-critical CSS -->
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/responsive.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" media="print" onload="this.media='all'">
+    
+    <!-- Fallback for browsers that don't support onload -->
+    <noscript>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </noscript>
+    
     <script src="js/scripts.js" defer></script>
     
     <!-- Structured Data for Restaurant Menu -->
@@ -147,7 +260,9 @@
                 </div>
                 
                 <div class="menu-item special-item">
-                    <img src="assets/images/curry-goat.png" alt="Curry Goat">
+                    <div class="menu-item-image-container">
+                        <img src="assets/images/curry-goat.png" alt="Curry Goat" width="300" height="200" loading="lazy">
+                    </div>
                     <div class="menu-item-content">
                         <h3>Curry Goat</h3>
                         <p>Tender goat meat slow-cooked in a rich curry sauce with potatoes and island spices.</p>
@@ -160,7 +275,9 @@
                 </div>
                 
                 <div class="menu-item">
-                    <img src="assets/images/Oxtail_Stew.png" alt="Oxtail Stew">
+                    <div class="menu-item-image-container">
+                        <img src="assets/images/Oxtail_Stew.png" alt="Oxtail Stew" width="300" height="200" loading="lazy">
+                    </div>
                     <div class="menu-item-content">
                         <h3>Oxtail Stew</h3>
                         <p>Tender oxtail slow-cooked in a rich, savory sauce with butter beans, carrots, and island spices.</p>
@@ -172,7 +289,9 @@
                 </div>
                 
                 <div class="menu-item">
-                    <img src="assets/images/ackee-saltfish.png" alt="Ackee and Saltfish">
+                    <div class="menu-item-image-container">
+                        <img src="assets/images/ackee-saltfish.png" alt="Ackee and Saltfish" width="300" height="200" loading="lazy">
+                    </div>
                     <div class="menu-item-content">
                         <h3>Ackee and Saltfish</h3>
                         <p>Jamaica's national dish featuring ackee fruit sautéed with salt cod, onions, tomatoes, and spices.</p>
