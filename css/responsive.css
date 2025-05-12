@@ -124,16 +124,15 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     body {
-        padding-top: 60px; /* Reduced padding for mobile */
-    }
-    
-    .hero {
-        margin-top: -60px; /* Match the mobile header height */
-        padding-top: 60px;
+        padding-top: 0;
     }
     
     section {
         padding: 40px 0; /* Reduced section padding for mobile */
+    }
+    
+    section:not(.hero) {
+        padding-top: 100px; /* Reduced top padding for mobile */
     }
     
     /* Gallery styles for very small screens */
