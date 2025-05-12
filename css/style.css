@@ -149,6 +149,23 @@ header .container {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo .spice-icon {
+    width: 32px;
+    height: 32px;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .spice-icon {
+    transform: rotate(15deg);
+}
+
 .logo h1 {
     color: #FED100;
     font-size: 1.8rem;
