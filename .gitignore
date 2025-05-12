@@ -1,0 +1,34 @@
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Replit specific
+.replit
+.breakpoints
+replit.nix
+.config/
+.upm/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Generated files
+generated-icon.png
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
