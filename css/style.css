@@ -515,6 +515,27 @@ nav ul li a:hover::after {
     left: 120%;
 }
 
+.customize-link {
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customize-link span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.customize-link i {
+    transition: transform 0.4s ease;
+}
+
+.customize-link:hover i {
+    transform: rotate(45deg);
+}
+
 /* Page Banner */
 .page-banner {
     height: 40vh;
