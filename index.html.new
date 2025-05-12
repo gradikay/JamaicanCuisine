@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Island Flavors - Caribbean Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Island Flavors</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Authentic Caribbean Cuisine</h1>
+            <p>Experience the vibrant flavors of the islands</p>
+            <a href="menu.html" class="btn">View Menu</a>
+        </div>
+    </section>
+
+    <section id="featured" class="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Dishes</h2>
+            <div class="featured-items">
+                <div class="featured-item">
+                    <img src="attached_assets/jerk-chicken.png" alt="Jerk Chicken">
+                    <h3>Jerk Chicken</h3>
+                    <p>Our signature dish with authentic Jamaican spices</p>
+                    <a href="menu.html" class="btn-small">View Menu</a>
+                </div>
+                <div class="featured-item">
+                    <img src="attached_assets/Oxtail_Stew.png" alt="Oxtail Stew">
+                    <h3>Oxtail Stew</h3>
+                    <p>Slow-cooked to perfection with island herbs</p>
+                    <a href="menu.html" class="btn-small">View Menu</a>
+                </div>
+                <div class="featured-item">
+                    <img src="attached_assets/ackee-saltfish.png" alt="Ackee and Saltfish">
+                    <h3>Ackee and Saltfish</h3>
+                    <p>Jamaica's national dish with fresh ingredients</p>
+                    <a href="menu.html" class="btn-small">View Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="reggae-top-border"></div>
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-intro">Feel the rhythm and reach out to us. One love, one heart!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <div class="contact-icon-wrapper">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Our Location</h3>
+                        </div>
+                        <p>123 Ocean Drive, Caribbean Beach</p>
+                        <div class="card-decoration"></div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <div class="contact-icon-wrapper">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>Call Us</h3>
+                        </div>
+                        <p>+1 (555) 123-4567</p>
+                        <div class="card-decoration"></div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <div class="contact-icon-wrapper">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email Us</h3>
+                        </div>
+                        <p>info@islandflavors.com</p>
+                        <div class="card-decoration"></div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <div class="contact-icon-wrapper">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Opening Hours</h3>
+                        </div>
+                        <p>Tuesday - Sunday: 11:00 AM - 10:00 PM</p>
+                        <p>Monday: Closed</p>
+                        <div class="card-decoration"></div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <!-- Music note decorative elements -->
+                    <div class="music-note-1">♫</div>
+                    <div class="music-note-2">♬</div>
+                    
+                    <div class="form-header">
+                        <h3>Send Us a Message</h3>
+                        <div class="form-decoration">
+                            <span></span>
+                            <i class="fas fa-music"></i>
+                            <span></span>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name"><i class="fas fa-user" style="color: #009B3A; margin-right: 5px;"></i> Your Name</label>
+                                <input type="text" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope" style="color: #FED100; margin-right: 5px;"></i> Your Email</label>
+                                <input type="email" id="email" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject"><i class="fas fa-tag" style="color: #B20000; margin-right: 5px;"></i> Subject</label>
+                            <input type="text" id="subject" placeholder="Enter subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment" style="color: #009B3A; margin-right: 5px;"></i> Message</label>
+                            <textarea id="message" placeholder="Write your message here..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn reggae-btn">
+                            <span class="btn-text">Send Good Vibes</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="reggae-bottom-decoration">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <h2>Island Flavors</h2>
+                        <p>Taste the Caribbean</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-hours">
+                        <h3>Opening Hours</h3>
+                        <ul>
+                            <li><span>Monday:</span> Closed</li>
+                            <li><span>Tuesday-Friday:</span> 11:00 AM - 10:00 PM</li>
+                            <li><span>Saturday:</span> 10:00 AM - 11:00 PM</li>
+                            <li><span>Sunday:</span> 10:00 AM - 9:00 PM</li>
+                        </ul>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe for special offers and updates</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your Email" required>
+                            <button type="submit" class="btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright">
+                    <p>&copy; 2025 Island Flavors. All Rights Reserved.</p>
+                </div>
+                <div class="jamaica-flag">
+                    <div class="flag-stripe green"></div>
+                    <div class="flag-stripe yellow"></div>
+                    <div class="flag-stripe green"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

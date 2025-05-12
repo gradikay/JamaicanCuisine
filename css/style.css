@@ -190,10 +190,309 @@ nav ul li a:hover::after {
     margin-bottom: 30px;
 }
 
+/* Featured Section */
+.featured {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f9f5eb, #f8f0e5);
+    position: relative;
+    overflow: hidden;
+}
+
+.featured::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: linear-gradient(to right, #009B3A, #FED100, #B20000);
+}
+
+.featured::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23009B3A' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.featured .section-title {
+    position: relative;
+    display: inline-block;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.featured .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #009B3A, #FED100, #B20000);
+    border-radius: 2px;
+}
+
+.featured-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.featured-item {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    transform-style: preserve-3d;
+    text-align: center;
+}
+
+.featured-item:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.featured-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.featured-item:hover img {
+    transform: scale(1.05);
+}
+
+.featured-item h3 {
+    color: #009B3A;
+    margin: 20px 0 10px;
+    font-size: 1.5rem;
+    font-family: Georgia, serif;
+}
+
+.featured-item p {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.btn-small {
+    display: inline-block;
+    background: linear-gradient(to right, #009B3A, #00783C);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 155, 58, 0.3);
+}
+
+.btn-small:hover {
+    background: linear-gradient(to right, #00783C, #009B3A);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 155, 58, 0.4);
+}
+
+/* Page Banner */
+.page-banner {
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../attached_assets/hero.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.page-banner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(45deg, #009B3A 33.33%, #FED100 33.33%, #FED100 66.66%, #B20000 66.66%);
+    background-size: 60px 100%;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
 /* About Section */
 .about {
     padding: 100px 0;
     background-color: #fff;
+}
+
+/* Team Section */
+.our-team {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.our-team::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: linear-gradient(to right, #009B3A, #FED100, #B20000);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.team-member {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.member-image {
+    width: 40%;
+    overflow: hidden;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.team-member:hover .member-image img {
+    transform: scale(1.1);
+}
+
+.member-info {
+    width: 60%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.member-info h3 {
+    color: #009B3A;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.member-title {
+    color: #FED100;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.member-bio {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Philosophy Section */
+.philosophy {
+    padding: 100px 0;
+    background: linear-gradient(rgba(0, 155, 58, 0.05), rgba(254, 209, 0, 0.05));
+}
+
+.philosophy-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.philosophy-item {
+    text-align: center;
+    padding: 40px 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.philosophy-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #009B3A, #FED100, #B20000);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.philosophy-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.philosophy-item:hover::before {
+    transform: scaleX(1);
+}
+
+.philosophy-item i {
+    font-size: 3rem;
+    color: #009B3A;
+    margin-bottom: 20px;
+    transition: transform 0.4s ease;
+}
+
+.philosophy-item:hover i {
+    transform: scale(1.2);
+}
+
+.philosophy-item h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.philosophy-item p {
+    color: #555;
+    line-height: 1.6;
 }
 
 .about-content {
