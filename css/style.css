@@ -50,20 +50,63 @@ img {
 
 .btn {
     display: inline-block;
-    background: #FED100;
+    background: linear-gradient(45deg, #FED100, #FED100 60%, #FFDE59);
     color: #000;
-    padding: 10px 25px;
+    padding: 12px 28px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
-    transition: all 0.3s ease;
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    box-shadow: 0 5px 15px rgba(254, 209, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    letter-spacing: 1px;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #009B3A, #009B3A 60%, #00B347);
+    z-index: -1;
+    transition: transform 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    transform: scaleX(0);
+    transform-origin: right;
+    border-radius: 50px;
 }
 
 .btn:hover {
-    background: #009B3A;
     color: white;
+    box-shadow: 0 7px 20px rgba(0, 155, 58, 0.6);
+    transform: translateY(-3px);
+}
+
+.btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.3);
+    top: -30px;
+    left: -50px;
+    transform: rotate(35deg);
+    transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: -1;
+}
+
+.btn:hover::after {
+    left: 120%;
 }
 
 /* Section Styles */
@@ -414,21 +457,62 @@ nav ul li a:hover::after {
 
 .btn-small {
     display: inline-block;
-    background: linear-gradient(to right, #009B3A, #00783C);
+    background: linear-gradient(45deg, #009B3A, #009B3A 60%, #00B347);
     color: #fff;
     padding: 10px 20px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
-    transition: all 0.3s ease;
     margin-bottom: 20px;
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
     box-shadow: 0 4px 10px rgba(0, 155, 58, 0.3);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    letter-spacing: 0.5px;
+}
+
+.btn-small::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #FED100, #FED100 60%, #FFDE59);
+    z-index: -1;
+    transition: transform 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    transform: scaleX(0);
+    transform-origin: right;
+    border-radius: 30px;
 }
 
 .btn-small:hover {
-    background: linear-gradient(to right, #00783C, #009B3A);
+    color: #000;
+    box-shadow: 0 6px 15px rgba(254, 209, 0, 0.5);
     transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0, 155, 58, 0.4);
+}
+
+.btn-small:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.btn-small::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.3);
+    top: -20px;
+    left: -30px;
+    transform: rotate(35deg);
+    transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: -1;
+}
+
+.btn-small:hover::after {
+    left: 120%;
 }
 
 /* Page Banner */
@@ -2677,14 +2761,54 @@ footer {
 
 .newsletter-form .btn {
     width: 100%;
-    background-color: #FED100;
+    background: linear-gradient(45deg, #FED100, #FED100 60%, #FFDE59);
     color: #000;
-    transition: all 0.3s ease;
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    box-shadow: 0 5px 15px rgba(254, 209, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.newsletter-form .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #009B3A, #009B3A 60%, #00B347);
+    z-index: -1;
+    transition: transform 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    transform: scaleX(0);
+    transform-origin: right;
 }
 
 .newsletter-form .btn:hover {
-    background-color: #009B3A;
     color: white;
+    box-shadow: 0 7px 20px rgba(0, 155, 58, 0.3);
+}
+
+.newsletter-form .btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.newsletter-form .btn::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.3);
+    top: -30px;
+    left: -50px;
+    transform: rotate(35deg);
+    transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: -1;
+}
+
+.newsletter-form .btn:hover::after {
+    left: 120%;
 }
 
 .footer-bottom {
