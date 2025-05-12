@@ -208,6 +208,18 @@
     
     .contact-form-container {
         width: 100%;
+        padding: 25px 20px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0 0 15px 0;
+    }
+    
+    .form-group input, 
+    .form-group textarea {
+        padding: 12px 15px;
     }
     
     /* Map section for small screens */
