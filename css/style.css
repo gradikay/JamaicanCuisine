@@ -336,15 +336,39 @@ nav ul li a:hover::after {
 
 /* Heading Animation */
 .animated-heading {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     position: relative;
 }
 
 .animated-heading h1 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     margin: 0;
 }
@@ -3051,9 +3075,21 @@ nav ul li a:hover::after {
 }
 
 .form-row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     gap: 20px;
-    margin-bottom: 20px;
+    /* Fallback for browsers that don't support gap */
+    margin: 0 -10px 20px -10px;
+}
+
+/* Fallback for browsers that don't support gap */
+@supports not (gap: 20px) {
+    .form-row > * {
+        padding: 0 10px;
+    }
 }
 
 .form-row .form-group {
