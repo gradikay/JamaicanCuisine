@@ -976,7 +976,7 @@ nav ul li a:hover::after {
 .page-banner {
     height: 40vh;
     min-height: 300px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/images/hero.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/images/hero.webp');
     background-size: cover;
     background-position: center;
     display: flex;
