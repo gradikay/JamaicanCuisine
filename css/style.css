@@ -1682,6 +1682,11 @@ nav ul li a:hover::after {
     overflow: hidden;
 }
 
+/* Hidden elements */
+.hidden {
+    display: none;
+}
+
 .cta-background-image {
     position: absolute;
     top: 0;
@@ -1705,6 +1710,8 @@ nav ul li a:hover::after {
 .cta-content {
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
+    z-index: 3;
 }
 
 .cta-content h2 {
@@ -2952,6 +2959,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
+    position: relative;
+    z-index: 3;
 }
 
 .footer-logo {
