@@ -3,11 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery - Island Flavors Caribbean Restaurant</title>
+    <meta name="description" content="Browse beautiful photos of authentic Caribbean dishes, culinary experiences, and our beachfront restaurant ambiance at Island Flavors.">
+    <meta name="keywords" content="Caribbean food gallery, Jamaican cuisine photos, restaurant pictures, Caribbean dishes, island food photography, restaurant ambiance">
+    <meta name="author" content="Sunfire Grill">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.islandflavors.com/gallery.html">
+    <meta property="og:title" content="Photo Gallery - Island Flavors Caribbean Restaurant">
+    <meta property="og:description" content="Browse beautiful photos of authentic Caribbean dishes, culinary experiences, and our beachfront restaurant.">
+    <meta property="og:image" content="attached_assets/restaurant_food_on_a_wooden_table.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.islandflavors.com/gallery.html">
+    <meta property="twitter:title" content="Photo Gallery - Island Flavors Caribbean Restaurant">
+    <meta property="twitter:description" content="Browse beautiful photos of authentic Caribbean dishes, culinary experiences, and our beachfront restaurant.">
+    <meta property="twitter:image" content="attached_assets/restaurant_food_on_a_wooden_table.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/spice-logo.svg" type="image/svg+xml">
+    
+    <title>Photo Gallery | Island Flavors | Caribbean Cuisine Images</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="js/scripts.js" defer></script>
+    
+    <!-- Structured Data for Image Gallery -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ImageGallery",
+        "headline": "Island Flavors Restaurant Photo Gallery",
+        "description": "A collection of photos showcasing authentic Caribbean dishes, our restaurant environment, and culinary experiences",
+        "url": "https://www.islandflavors.com/gallery.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Island Flavors",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "assets/spice-logo.svg"
+            }
+        },
+        "containsPlace": {
+            "@type": "Restaurant",
+            "name": "Island Flavors",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Ocean Drive",
+                "addressLocality": "Caribbean Beach",
+                "addressRegion": "Jamaica"
+            }
+        }
+    }
+    </script>
 </head>
 <body>
     <header>

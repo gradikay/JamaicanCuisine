@@ -3,11 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu - Island Flavors Caribbean Restaurant</title>
+    <meta name="description" content="Explore our authentic Caribbean menu featuring Jamaican classics like jerk chicken, curry goat, and ackee & saltfish. Island favorites and vegetarian options available.">
+    <meta name="keywords" content="Caribbean menu, Jamaican food, jerk chicken, curry goat, oxtail, ackee and saltfish, rice and peas, plantains, island cuisine">
+    <meta name="author" content="Sunfire Grill">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.islandflavors.com/menu.html">
+    <meta property="og:title" content="Menu - Island Flavors Caribbean Restaurant">
+    <meta property="og:description" content="Explore our authentic Caribbean menu featuring Jamaican classics like jerk chicken, curry goat, and ackee & saltfish.">
+    <meta property="og:image" content="attached_assets/jerk-chicken.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.islandflavors.com/menu.html">
+    <meta property="twitter:title" content="Menu - Island Flavors Caribbean Restaurant">
+    <meta property="twitter:description" content="Explore our authentic Caribbean menu featuring Jamaican classics like jerk chicken, curry goat, and ackee & saltfish.">
+    <meta property="twitter:image" content="attached_assets/jerk-chicken.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/spice-logo.svg" type="image/svg+xml">
+    
+    <title>Menu | Island Flavors | Authentic Jamaican Cuisine</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="js/scripts.js" defer></script>
+    
+    <!-- Structured Data for Restaurant Menu -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Menu",
+        "name": "Island Flavors Menu",
+        "description": "Authentic Caribbean cuisine featuring Jamaican favorites",
+        "url": "https://www.islandflavors.com/menu.html",
+        "mainEntity": [
+            {
+                "@type": "MenuSection",
+                "name": "Mains",
+                "description": "Caribbean main dishes",
+                "hasMenuItem": [
+                    {
+                        "@type": "MenuItem",
+                        "name": "Jerk Chicken",
+                        "description": "Marinated in spices and slow-cooked over pimento wood",
+                        "price": "$15.99"
+                    },
+                    {
+                        "@type": "MenuItem",
+                        "name": "Curry Goat",
+                        "description": "Tender goat meat in aromatic island curry sauce",
+                        "price": "$17.99"
+                    },
+                    {
+                        "@type": "MenuItem",
+                        "name": "Oxtail Stew",
+                        "description": "Slow-cooked oxtail with butter beans and island spices",
+                        "price": "$18.99"
+                    },
+                    {
+                        "@type": "MenuItem",
+                        "name": "Ackee & Saltfish",
+                        "description": "Jamaica's national dish with fresh ackee fruit and salted cod",
+                        "price": "$16.99"
+                    }
+                ]
+            },
+            {
+                "@type": "MenuSection",
+                "name": "Sides",
+                "description": "Traditional Caribbean sides and appetizers",
+                "hasMenuItem": [
+                    {
+                        "@type": "MenuItem",
+                        "name": "Rice and Peas",
+                        "description": "Rice cooked with coconut milk and kidney beans",
+                        "price": "$4.99"
+                    },
+                    {
+                        "@type": "MenuItem",
+                        "name": "Fried Plantains",
+                        "description": "Sweet plantains fried to golden perfection",
+                        "price": "$3.99"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <header>
