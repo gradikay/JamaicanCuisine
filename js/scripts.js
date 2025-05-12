@@ -113,3 +113,39 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Scroll reveal animation
+document.addEventListener('DOMContentLoaded', function() {
+    // Add reveal class to sections that should animate on scroll
+    const sections = document.querySelectorAll('section:not(.page-banner)');
+    sections.forEach(section => {
+        section.classList.add('reveal');
+    });
+    
+    // Also add to featured items, menu items, about-content, etc.
+    const revealElements = document.querySelectorAll('.menu-item, .featured-item, .about-content, .gallery-item, .testimonial, .team-member');
+    revealElements.forEach(el => {
+        el.classList.add('reveal');
+    });
+    
+    // Initialize scroll observer
+    const revealCallback = function(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // Once revealed, no need to watch anymore
+            }
+        });
+    };
+    
+    const revealObserver = new IntersectionObserver(revealCallback, {
+        root: null,
+        threshold: 0.15, // When 15% of the element is visible
+        rootMargin: '0px 0px -50px 0px' // Slight offset to trigger earlier
+    });
+    
+    // Observe all elements with reveal class
+    document.querySelectorAll('.reveal').forEach(el => {
+        revealObserver.observe(el);
+    });
+});
