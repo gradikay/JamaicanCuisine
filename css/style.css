@@ -750,6 +750,10 @@ nav ul li a:hover::after {
     position: relative;
 }
 
+.map-iframe {
+    border: 0;
+}
+
 .location-details {
     width: 350px;
     padding: 30px;
@@ -2622,6 +2626,23 @@ nav ul li a:hover::after {
     color: #FED100;
     font-size: 0.9rem;
     animation: pulse 2s infinite;
+}
+
+/* Form label icons */
+.form-label-icon {
+    margin-right: 5px;
+}
+
+.icon-green {
+    color: #009B3A;
+}
+
+.icon-yellow {
+    color: #FED100;
+}
+
+.icon-red {
+    color: #B20000;
 }
 
 @keyframes pulse {
