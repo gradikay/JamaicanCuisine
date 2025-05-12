@@ -127,12 +127,20 @@
         padding-top: 0;
     }
     
+    .hero, .page-banner {
+        padding-top: 60px; /* Account for navbar height on mobile */
+    }
+    
     section {
         padding: 40px 0; /* Reduced section padding for mobile */
     }
     
-    section:not(.hero) {
+    section:not(.hero):not(.page-banner) {
         padding-top: 100px; /* Reduced top padding for mobile */
+    }
+    
+    .hero + section {
+        padding-top: 40px !important; /* Reduced padding for section after hero on mobile */
     }
     
     /* Gallery styles for very small screens */

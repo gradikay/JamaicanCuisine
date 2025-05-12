@@ -79,9 +79,14 @@ section {
     overflow: hidden;
 }
 
-/* Add padding-top for main content sections (not hero) */
-section:not(.hero) {
+/* Fix for content sections so they appear below the navbar */
+section:not(.hero):not(.page-banner) {
     padding-top: 140px; /* Extra padding to account for fixed header */
+}
+
+/* First section after hero needs less padding */
+.hero + section {
+    padding-top: 60px !important;
 }
 
 a {
@@ -354,7 +359,7 @@ nav ul li a:hover::after {
     overflow: hidden;
     color: white;
     margin-top: 0;
-    padding-top: 0;
+    padding-top: 80px; /* Account for navbar height */
     box-sizing: border-box;
 }
 
@@ -981,7 +986,7 @@ nav ul li a:hover::after {
     color: white;
     position: relative;
     margin-top: 0;
-    padding-top: 0;
+    padding-top: 60px; /* Space for the fixed navbar */
 }
 
 .page-banner::after {
