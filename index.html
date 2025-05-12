@@ -13,161 +13,22 @@
     <meta property="og:url" content="https://www.islandflavors.com/">
     <meta property="og:title" content="Island Flavors Caribbean Restaurant">
     <meta property="og:description" content="Experience authentic Jamaican cuisine with a modern twist at our beachfront restaurant.">
-    <meta property="og:image" content="assets/images/hero.webp">
+    <meta property="og:image" content="assets/images/hero.png">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.islandflavors.com/">
     <meta property="twitter:title" content="Island Flavors Caribbean Restaurant">
     <meta property="twitter:description" content="Experience authentic Jamaican cuisine with a modern twist at our beachfront restaurant.">
-    <meta property="twitter:image" content="assets/images/hero.webp">
+    <meta property="twitter:image" content="assets/images/hero.png">
     
     <!-- Favicon -->
-    <!-- Favicon and Apple Touch Icons -->
     <link rel="icon" href="assets/spice-logo.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="assets/spice-logo.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/spice-logo.svg">
     
     <title>Island Flavors | Authentic Caribbean Restaurant | Jamaican Cuisine</title>
-    
-    <!-- Preload important resources -->
-    <link rel="preload" href="assets/spice-logo.svg" as="image" type="image/svg+xml">
-    <link rel="preload" href="assets/images/hero.webp" as="image">
-    
-    <!-- Inline critical CSS -->
-    <style>
-    /* Critical CSS for above-the-fold content */
-    *, *::before, *::after {
-        margin: 0;
-        padding: 0;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        color: #333;
-        background-color: #f9f9f9;
-        overflow-x: hidden;
-        padding-top: 80px;
-        margin: 0;
-    }
-    
-    .container {
-        width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 15px;
-        box-sizing: border-box;
-    }
-    
-    /* Header Styles */
-    header {
-        background-color: rgba(0, 0, 0, 0.85);
-        color: white;
-        padding: 15px 0;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-        -webkit-transition: all 0.3s ease;
-        transition: all 0.3s ease;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    header .container {
-        display: -webkit-box;
-        display: flex;
-        -webkit-justify-content: space-between;
-        justify-content: space-between;
-        -webkit-align-items: center;
-        align-items: center;
-    }
-    
-    .logo {
-        display: flex;
-        align-items: center;
-    }
-    
-    .logo img {
-        height: 50px;
-        margin-right: 10px;
-    }
-    
-    /* Hero Section */
-    .hero {
-        height: 100vh;
-        min-height: 500px;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        overflow: hidden;
-        color: white;
-        margin-top: -80px;
-        padding-top: 80px;
-    }
-    
-    .hero-content {
-        max-width: 800px;
-        width: 90%;
-        padding: 20px;
-        position: relative;
-        z-index: 3;
-        margin: 0 auto;
-    }
-    
-    .hero-content h1 {
-        font-size: 3.5rem;
-        margin-bottom: 20px;
-        color: white;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    }
-    
-    /* Small screens */
-    @media (max-width: 767.98px) {
-        header .container {
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            padding: 0 15px;
-        }
-        
-        .hero-content h1 {
-            font-size: 2rem;
-            line-height: 1.2;
-        }
-    }
-    
-    @media (max-width: 575.98px) {
-        body {
-            padding-top: 60px;
-        }
-        
-        .hero {
-            margin-top: -60px;
-            padding-top: 60px;
-        }
-    }
-    </style>
-    
-    <!-- Defer non-critical CSS -->
-    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/responsive.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" media="print" onload="this.media='all'">
-    
-    <!-- Fallback for browsers that don't support onload -->
-    <noscript>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    </noscript>
-    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="js/scripts.js" defer></script>
     
     <!-- Structured Data for Restaurant -->
@@ -176,7 +37,7 @@
         "@context": "https://schema.org",
         "@type": "Restaurant",
         "name": "Island Flavors",
-        "image": "assets/images/hero.webp",
+        "image": "assets/images/hero.png",
         "url": "https://www.islandflavors.com",
         "telephone": "+1 (555) 123-4567",
         "address": {
@@ -222,10 +83,10 @@
 <body>
     <header>
         <div class="container">
-            <a href="index.html" class="logo">
+            <div class="logo">
                 <img src="assets/spice-logo.svg" alt="Spice Icon" class="spice-icon">
                 <h2>Island Flavors</h2>
-            </a>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
@@ -242,7 +103,7 @@
     </header>
 
     <section id="home" class="hero">
-        <img src="assets/images/hero.webp" alt="Caribbean Beach Restaurant Scene" class="hero-image" width="1920" height="1080" fetchpriority="high">
+        <img src="assets/images/hero.png" alt="Caribbean Beach Restaurant Scene" class="hero-image" loading="lazy">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="animated-heading">
@@ -267,25 +128,19 @@
             <h2 class="section-title">Featured Dishes</h2>
             <div class="featured-items">
                 <div class="featured-item">
-                    <div class="image-container">
-                        <img src="assets/images/jerk-chicken.png" alt="Jerk Chicken" width="400" height="300" loading="lazy">
-                    </div>
+                    <img src="assets/images/jerk-chicken.png" alt="Jerk Chicken">
                     <h3>Jerk Chicken</h3>
                     <p>Our signature dish with authentic Jamaican spices</p>
                     <a href="menu.html" class="btn-small">View Menu</a>
                 </div>
                 <div class="featured-item">
-                    <div class="image-container">
-                        <img src="assets/images/Oxtail_Stew.png" alt="Oxtail Stew" width="400" height="300" loading="lazy">
-                    </div>
+                    <img src="assets/images/Oxtail_Stew.png" alt="Oxtail Stew">
                     <h3>Oxtail Stew</h3>
                     <p>Slow-cooked to perfection with island herbs</p>
                     <a href="menu.html" class="btn-small">View Menu</a>
                 </div>
                 <div class="featured-item">
-                    <div class="image-container">
-                        <img src="assets/images/ackee-saltfish.png" alt="Ackee and Saltfish" width="400" height="300" loading="lazy">
-                    </div>
+                    <img src="assets/images/ackee-saltfish.png" alt="Ackee and Saltfish">
                     <h3>Ackee and Saltfish</h3>
                     <p>Jamaica's national dish with fresh ingredients</p>
                     <a href="menu.html" class="btn-small">View Menu</a>
@@ -318,7 +173,7 @@
                     <a href="about.html" class="btn">Learn More</a>
                 </div>
                 <div class="about-preview-image">
-                    <img src="assets/images/male-chef-4.webp" alt="Chef at work" width="500" height="500" loading="lazy">
+                    <img src="assets/images/male-chef-4.png" alt="Chef at work">
                 </div>
             </div>
         </div>
@@ -397,7 +252,7 @@
 
     <footer>
         <div class="footer-top">
-            <img src="assets/images/restaurant.png" alt="Restaurant Interior" class="footer-background-image" width="1920" height="1080" loading="lazy">
+            <img src="assets/images/restaurant.png" alt="Restaurant Interior" class="footer-background-image" loading="lazy">
             <div class="footer-overlay"></div>
             <div class="container">
                 <div class="footer-content">
