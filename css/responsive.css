@@ -31,6 +31,19 @@
     .menu-items {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
+    
+    /* Map responsiveness */
+    .map-content {
+        flex-direction: column;
+    }
+    
+    .location-details {
+        width: 100%;
+    }
+    
+    .map-frame {
+        height: 400px;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -110,6 +123,52 @@
         padding: 0 15px;
     }
     
+    /* Map section for small screens */
+    .map-section {
+        padding: 60px 0 40px;
+    }
+    
+    .map-section .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .map-container {
+        min-height: auto;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .map-frame {
+        height: 300px;
+    }
+    
+    .location-details {
+        padding: 15px;
+    }
+    
+    .location-card {
+        padding: 15px;
+    }
+    
+    .location-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+    }
+    
+    .location-info h3 {
+        font-size: 1.3rem;
+    }
+    
+    .location-info p {
+        font-size: 0.9rem;
+    }
+    
+    .get-directions-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    /* Contact section */
     .contact-intro {
         font-size: 1rem;
         margin-bottom: 30px;
