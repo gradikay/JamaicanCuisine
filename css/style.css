@@ -517,14 +517,20 @@ nav ul li a:hover::after {
 
 .customize-link {
     margin-top: 15px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 155, 58, 0.2), 0 0 20px rgba(254, 209, 0, 0.1);
+    z-index: 10;
+    position: relative;
 }
 
 .customize-link span {
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
 }
 
@@ -1967,10 +1973,18 @@ nav ul li a:hover::after {
     font-family: Georgia, serif;
 }
 
-.menu-item:hover .romantic-description {
+.menu-item:not(.special-item):hover .romantic-description {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+}
+
+.special-item .static-description {
+    color: #555;
+    font-style: italic;
+    margin: 10px 0;
+    line-height: 1.6;
+    font-family: Georgia, serif;
 }
 
 .romantic-description p {
