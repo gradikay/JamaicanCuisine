@@ -64,6 +64,12 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
+    overflow-x: hidden;
+    padding-top: 80px; /* Account for fixed header */
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 a {

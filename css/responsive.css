@@ -110,6 +110,10 @@
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    body {
+        padding-top: 60px; /* Reduced padding for mobile */
+    }
+    
     .container {
         width: 100%;
         max-width: 100%;
