@@ -52,6 +52,14 @@
         max-width: 540px;
     }
     
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    
     /* Mobile Menu Toggle */
     .menu-toggle {
         display: block;
@@ -112,6 +120,10 @@
 @media (max-width: 575.98px) {
     body {
         padding-top: 60px; /* Reduced padding for mobile */
+    }
+    
+    section {
+        padding: 40px 0; /* Reduced section padding for mobile */
     }
     
     .container {

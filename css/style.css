@@ -72,6 +72,12 @@ body {
     box-sizing: border-box;
 }
 
+section {
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
     color: #009B3A;
