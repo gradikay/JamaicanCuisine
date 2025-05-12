@@ -1982,13 +1982,18 @@ nav ul li a:hover::after {
     flex: 1;
     min-width: 300px;
     position: relative;
+    aspect-ratio: 1/1;
+    min-height: 500px;
 }
 
 .about-preview-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transform: rotate(-3deg);
+    transition: all 0.5s ease;
 }
 
 .about-preview-image::before {
