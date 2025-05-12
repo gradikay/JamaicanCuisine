@@ -1676,12 +1676,30 @@ nav ul li a:hover::after {
 /* CTA Section */
 .cta-section {
     padding: 80px 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/restaurant_food_on_a_wooden_table.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     color: white;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.cta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
 }
 
 .cta-content {
