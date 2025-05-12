@@ -2752,6 +2752,7 @@ nav ul li a:hover::after {
     transform-style: preserve-3d;
     border: 5px solid white;
     cursor: pointer;
+    aspect-ratio: 1/1;
 }
 
 .gallery-overlay {
