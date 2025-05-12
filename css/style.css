@@ -274,6 +274,13 @@ nav ul li a:hover::after {
     position: relative;
 }
 
+.animated-heading h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
 .animated-word {
     display: inline-block;
     animation: wordFade 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
