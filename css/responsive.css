@@ -131,6 +131,18 @@
         padding-top: 60px; /* Account for navbar height on mobile */
     }
     
+    .banner-image {
+        height: 100%; /* Ensure image covers full banner height */
+    }
+    
+    .banner-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .banner-content p {
+        font-size: 1rem;
+    }
+    
     section {
         padding: 40px 0; /* Reduced section padding for mobile */
     }
