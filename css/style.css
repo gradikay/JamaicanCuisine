@@ -238,6 +238,10 @@ header .container {
 }
 
 nav ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
 }
 
@@ -3025,6 +3029,21 @@ nav ul li a:hover::after {
     color: #B20000;
 }
 
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(1.2); }
+    100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes pulse {
+    0% { -moz-transform: scale(1); }
+    50% { -moz-transform: scale(1.2); }
+    100% { -moz-transform: scale(1); }
+}
+@-o-keyframes pulse {
+    0% { -o-transform: scale(1); }
+    50% { -o-transform: scale(1.2); }
+    100% { -o-transform: scale(1); }
+}
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.2); }
