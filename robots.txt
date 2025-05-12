@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.islandflavors.com/sitemap.xml
+
+# Disallow old/backup files if they exist
+Disallow: /old/
+Disallow: /backup/
+Disallow: /temp/
+Disallow: /.git/
